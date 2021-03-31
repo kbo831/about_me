@@ -1,0 +1,23 @@
+@font-face { 
+    font-family: "NanumBarunpenR";
+    font-style: normal;
+    font-weight: 400;
+    src:local(※),url("../font/NanumBarunpenB.woff") format("woff"),
+    url("../font/NanumBarunpenR.woff2") format("woff2"),
+    url("../font/NanumBarunpenR.eot") format("embedded-opentype"),
+    url("../font/NanumBarunpenR.ttf") format("truetype");
+    }
+
+
+
+
+@font-face { 
+font-family: "NanumBarunpenB";
+font-style: normal;
+font-weight: 600;
+src:local(※),url("../font/NanumBarunpenB.woff") format("woff"),
+url("../font/NanumBarunpenB.woff2") format("woff2"),
+url("../font/NanumBarunpenB.eot") format("embedded-opentype"),
+url("../font/NanumBarunpenB.ttf") format("truetype");
+}
+

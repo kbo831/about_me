@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; }
+body,html { width: 100%; font-family: "NanumBarunpenB" ,"NotoSans-Medium", "sans-serif";}
+ul { list-style: none; }
+a { text-decoration: none;}
+
+.all { width: 100vw; height: 100vh;}
+.wrap { width: 100%; height:100%; }
+.hello { width: 100% ; height: 100%; background-color:#cadcce ; position:fixed; top: 0; left: 0; }
+.hello .hello_wrap { width: 100% ; height:100%;  }
+.hello .hello_wrap .word_lst { width: 100%; height:100%; clear:both; position:relative; }
+.hello .hello_wrap .word_lst:after { content: ""; clear:both; display: block; }
+.hello .hello_wrap .word_lst li  { position:absolute; top:30%;  transition:0.8s;  }
+.hello .hello_wrap .word_lst li span {font-size: 20em; font-weight: 800;  }
+
+/* 애니메이션 구현 생각하기 */
+.hello .hello_wrap .word_lst li.it1 { right:0; animation-name:roll; animation-duration: 0.8s; }
+@keyframes  { 
+    0% { transform:rotate(0deg) ;  }
+    100% { transform:rotate(0deg) translateX(-20%); }
+}
+
+.hello .hello_wrap .word_lst li.it2 { left:30%   }
+.hello .hello_wrap .word_lst li.it3 {  left:40%   }
+.hello .hello_wrap .word_lst li.it4 { left:50%    }
+.hello .hello_wrap .word_lst li.it5 { left:60%    }
+.hello .hello_wrap .word_lst li.it6 { left:70%    }
+.hello .hello_wrap .word_lst li.it7 { left:80%   }

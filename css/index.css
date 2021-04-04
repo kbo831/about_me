@@ -1,29 +1,92 @@
 @charset "utf-8";
 
 * { margin: 0; padding: 0; }
-body,html { width: 100%; font-family: "NanumBarunpenB" ,"NotoSans-Medium", "sans-serif";}
+body,html { width: 100%; font-family:"NotoSans-Medium", "sans-serif";}
 ul { list-style: none; }
 a { text-decoration: none;}
+.clr { clear:both }
+.clr:after { content:""; display: block; clear:both;}
 
 .all { width: 100vw; height: 100vh;}
 .wrap { width: 100%; height:100%; }
-.hello { width: 100% ; height: 100%; background-color:#cadcce ; position:fixed; top: 0; left: 0; }
+.hello { width: 100% ; height: 100vw; background-color:#cc99ff ; position:fixed; top: 0; left: 0; }
 .hello .hello_wrap { width: 100% ; height:100%;  }
-.hello .hello_wrap .word_lst { width: 100%; height:100%; clear:both; position:relative; }
-.hello .hello_wrap .word_lst:after { content: ""; clear:both; display: block; }
-.hello .hello_wrap .word_lst li  { position:absolute; top:30%;  transition:0.8s;  }
-.hello .hello_wrap .word_lst li span {font-size: 20em; font-weight: 800;  }
+.hello .hello_wrap .word_lst { width: 80%; height:50%; clear:both;  position: relative;}
 
 /* 애니메이션 구현 생각하기 */
-.hello .hello_wrap .word_lst li.it1 { right:0; animation-name:roll; animation-duration: 0.8s; }
-@keyframes  { 
-    0% { transform:rotate(0deg) ;  }
-    100% { transform:rotate(0deg) translateX(-20%); }
+.hello .hello_wrap .word_lst span {position:absolute; top:20%; font-size: 15em; font-weight: 800; animation-duration:2.3s; animation-timing-function: ease-in-out;  color:#fff ; transform-origin: 50% 50%; }
+.hello .hello_wrap .word_lst span.it1 { left:30%;  animation-name:roll1;  }
+
+.hello .hello_wrap .word_lst span.it2 {left:42%;  animation-name:roll2; animation-delay: 0.3s }
+.hello .hello_wrap .word_lst span.it3 {left:52%;  animation-name:roll3; animation-delay: 0.6s }
+.hello .hello_wrap .word_lst span.it4 {left:57%;
+ animation-name:roll4; animation-delay: 0.9s}
+.hello .hello_wrap .word_lst span.it5 {left:62%;  animation-name:roll5; animation-delay: 1.2s }
+.hello .hello_wrap .word_lst span.it6 {left:72%;  animation-name:roll6; animation-delay: 1.5s }
+.hello .hello_wrap .word_lst span.it7 {left:85%;  animation-name:roll7; animation-delay: 1.8s }
+
+@keyframes roll1 {
+    0% { transform: translateY(120%) ;  }
+    50% { transform: translateY(-50%); color:purple }
+    70% { transform: translateY(50%); }
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0); color:#fff }
 }
 
-.hello .hello_wrap .word_lst li.it2 { left:30%   }
-.hello .hello_wrap .word_lst li.it3 {  left:40%   }
-.hello .hello_wrap .word_lst li.it4 { left:50%    }
-.hello .hello_wrap .word_lst li.it5 { left:60%    }
-.hello .hello_wrap .word_lst li.it6 { left:70%    }
-.hello .hello_wrap .word_lst li.it7 { left:80%   }
+@keyframes roll2 {
+    0% { transform: translateY(120%)}
+    50% { transform: translateY(-50%);  }
+    70% { transform: translateY(50%); color:purple}
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0);color:#fff }
+}
+
+@keyframes roll3 {
+    0% { transform: translateY(120%)}
+    50% { transform: translateY(-50%);  }
+    70% { transform: translateY(50%); color:purple}
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0);color:#fff }
+}
+
+@keyframes roll4 {
+    0% { transform: translateY(120%)}
+    50% { transform: translateY(-50%);  }
+    70% { transform: translateY(50%); color:purple}
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0);color:#fff }
+}
+@keyframes roll5 {
+    0% { transform: translateY(120%)}
+    50% { transform: translateY(-50%);  }
+    70% { transform: translateY(50%); color:purple}
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0);color:#fff }
+}
+@keyframes roll6 {
+    0% { transform: translateY(120%)}
+    50% { transform: translateY(-50%);  }
+    70% { transform: translateY(50%); color:purple}
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0);color:#fff }
+}
+@keyframes roll7 {
+    0% { transform: translateY(120%)}
+    50% { transform: translateY(-50%);  }
+    70% { transform: translateY(50%); color:purple}
+    90% { transform: translateY(-30%) }
+    100% { transform: translateY(0);color:#fff }
+}
+
+
+.hello .scroll_txt { width: 100%; height: 100%; background-color:#cc99ff }
+.hello .scroll_txt .st_lst { width: 80%; height:50%; clear:both;  position: relative;  margin-left: 15%; position:relative;}
+.hello .scroll_txt .st_lst span { font-size: 14em; position:absolute;  transition:3s; transition-delay: 2s; }
+.hello .scroll_txt .st_lst span.it1 { left: -80%;  top: 18%; }
+.hello .scroll_txt .st_lst span.it2 { right: -80%; bottom: 18%; }
+
+.main { width: 100vw;  clear:both; display: none; position:relative; }
+.main .hd { width: 100%; height:20%; overflow: hidden;}
+.main .hd .gnb_lst { width: 95%; height: 100%; margin: 0 auto ; }
+.main .hd .gnb_lst li { float:left; width: 25%;  }
+.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box;}

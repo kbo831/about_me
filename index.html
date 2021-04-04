@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,86 +47,114 @@
     <script src="js/respond.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <div class="all">
         <div class="wrap">
             <div class="hello">
                 <div class="hello_wrap">
-                    <ul class="word_lst">
-                        <li class="it1"><span>H</span></li>
-                        <li class="it2"><span>e</span></li>
-                        <li class="it3"><span>l</span></li>
-                        <li class="it4"><span>l</span></li>
-                        <li class="it5"><span>o</span></li>
-                        <li class="it6"><span>!</span></li>
-                    </ul>
+                    <div class="word_lst clr">
+                        <span class="it1">H</span>
+                        <span class="it2">e</span>
+                        <span class="it3">l</span>
+                        <span class="it4">l</span>
+                        <span class="it5">o</span>
+                        <span class="it6">w</span>
+                        <span class="it7">!</span>
+                    </div>
                 </div>
+                <div class="scroll_txt">
+                    <div class="st_lst clr">
+                        <span class="it1">TAEEUN</span>
+                        <span class="it2">PortFolio</span>
+                    </div>
+                </div>
+
             </div>
-            <div class="scroll_txt">
-                <ul class="st_lst">
-                    <li class="it1"><span>TAEEUN</span></li>
-                    <li class="it2"><span>PortFolio</span></li>
-                </ul>
-            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $(".hello_wrap").delay(4500).fadeOut(1000);
+                    $(".scroll_txt").fadeIn(1000,function(){
+                        $(".st_lst span.it1").not(":animated").animate({"left":"0px"},1500);
+                        $(".st_lst span.it2").not(":animated").animate({"right":"0px"},1500);
+                        
+                    });
+                    $(".hello").delay(6500).fadeOut(800);
+                });
+            </script>
+
             <!-- 여기 div 2개 canvs는 배경? -->
-            <header class="hd">
-                <ul class="gnb_lst">
+            <div class="main clr">
+               <header class="hd clr">
+                <ul class="gnb_lst clr">
                     <li class="it1"><a href="">TAEEUN_K</a></li>
                     <li class="it2"><a href="">Skill</a></li>
                     <li class="it3"><a href="">Portfolio</a></li>
                     <li class="it4"><a href="">Contact me</a></li>
                 </ul>
             </header>
-            <div class="main">
-                <div class="wrap">
-                    <div class="scroll_section">
+                <div class="wrap clr">
+                  <div class="spring_bg clr">
+                      <ul class="bg_box clr">
+                          <li class="bg1"></li>
+                          <li class="bg2"></li>
+                          <li class="bg3"></li>
+                          <li class="bg4"></li>
+                      </ul>
+                  </div>
+                    <div class="scroll_section clr">
                         <section class="project_box">
-                            <h2 class="hide"></h2>
+                            <h2 class="pj_tit">Port Folio</h2>
                             <div class="container">
-                                <ul class="content">
-                                    <li class="project1">
+                                <ul class="content clr">
+                                    <li class="project project1">
                                         <div class="item">
                                             <a href="project01.html">1</a>
                                         </div>
-                                        <h1>제목</h1>
+                                        <h1>web1</h1>
+                                        <p class="com">익산문화관광 포트폴리오</p>
                                     </li>
-                                    <li class="project2">
+                                    <li class="project project2">
                                         <div class="item">
                                             <a href="project02.html">2</a>
                                         </div>
-                                        <h1>제목</h1>
+                                        <h1>web3</h1>
+                                        <p class="com">경기도청 포트폴리오</p>
                                     </li>
-                                    <li class="project3">
+                                    <li class="project project3">
                                         <div class="item">
                                             <a href="project03.html">3</a>
                                         </div>
-                                        <h1>제목</h1>
+                                        <h1>web4</h1>
+                                        <p class="com">시드물 포트폴리오</p>
                                     </li>
-                                    <li class="project4">
+                                    <li class="project project4">
                                         <div class="item">
                                             <a href="project04.html">4</a>
                                         </div>
-                                        <h1>제목</h1>
+                                        <h1>web5</h1>
+                                        <p class="com">CJ(주) 포트폴리오</p>
                                     </li>
-                                    <li class="project5">
+                                    <li class="project project5">
                                         <div class="item">
                                             <a href="project05.html">5</a>
                                         </div>
                                         <h1>제목</h1>
                                     </li>
-                                    <li class="project6">
+                                    <li class="project project6">
                                         <div class="item">
                                             <a href="project06.html">6</a>
                                         </div>
                                         <h1>제목</h1>
                                     </li>
-                                    <li class="project7">
+                                    <li class="project project7">
                                         <div class="item">
                                             <a href="project07.html">7</a>
                                         </div>
                                         <h1>제목</h1>
                                     </li>
-                                    <li class="project8">
+                                    <li class="project project8">
                                         <div class="item">
                                             <a href="project08.html">8</a>
                                         </div>
@@ -145,9 +174,37 @@
                     </div>
                 </div>
                 <!-- main 끝 전 -->
+               <script>
+                $(document).ready(function(){
+                  
+                 $(".main").delay(7200).slideDown(1000);
+                   
+                    var sct = $(window).scrollTop();
+                    var ht =  $(".bg_box li").height();
+                    var wd = $(".bg_box li").width();
+                    // 콘텐츠 스크롤시 배경 넘어가게
+                    //1. 스크롤 양 구하기
+                    //2. 스크롤 한 번 할 때 슬라이드 한번
+                    //3. 스크롤 한 번 할 때 헤드 배경색 변경
+                    
+                    $(window).scroll(function(){
+                        if( sct >= ht){
+                        nt();
+                        }
+                        
+                        function nt(){
+                            $(".bg_box").not(":animated").animate({"margin-left":-wd},700,function(){
+                                $(".bg_box li").eq(0).appendTo($(".bg_box"));
+                                $(".bg_box").css("margin-left","0px");
+                            })
+                        }
+                    });
+                })
+                </script>
             </div>
             <!-- wrap 끝 전 -->
         </div>
     </div>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 * { margin: 0; padding: 0; }
-body,html { width: 100%; font-family:"NotoSans-Medium", "sans-serif";}
+body,html { width: 100%; font-family:"NotoSans-Medium", "sans-serif"; overflow-x: hidden; }
 ul { list-style: none; }
 a { text-decoration: none;}
 .clr { clear:both }
@@ -9,12 +9,12 @@ a { text-decoration: none;}
 
 .all { width: 100vw; height: 100vh;}
 .wrap { width: 100%; height:100%; }
-.hello { width: 100% ; height: 100vw; background-color:#cc99ff ; position:fixed; top: 0; left: 0; }
+.hello { width: 100% ; height: 100vw; background-image:url(../bg/load_bg.jpg); position:fixed; top: 0; left: 0; }
 .hello .hello_wrap { width: 100% ; height:100%;  }
 .hello .hello_wrap .word_lst { width: 80%; height:50%; clear:both;  position: relative;}
 
 /* 애니메이션 구현 생각하기 */
-.hello .hello_wrap .word_lst span {position:absolute; top:20%; font-size: 15em; font-weight: 800; animation-duration:2.3s; animation-timing-function: ease-in-out;  color:#fff ; transform-origin: 50% 50%; }
+.hello .hello_wrap .word_lst span {position:absolute; top:35%; font-size: 15em; font-weight: 800; animation-duration:2.3s; animation-timing-function: ease-in-out;  color:mediumpurple; transform-origin: 50% 50%; }
 .hello .hello_wrap .word_lst span.it1 { left:30%;  animation-name:roll1;  }
 
 .hello .hello_wrap .word_lst span.it2 {left:42%;  animation-name:roll2; animation-delay: 0.3s }
@@ -27,10 +27,10 @@ a { text-decoration: none;}
 
 @keyframes roll1 {
     0% { transform: translateY(120%) ;  }
-    50% { transform: translateY(-50%); color:purple }
+    50% { transform: translateY(-50%); color:purple}
     70% { transform: translateY(50%); }
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0); color:#fff }
+    100% { transform: translateY(0); color:mediumpurple}
 }
 
 @keyframes roll2 {
@@ -38,7 +38,7 @@ a { text-decoration: none;}
     50% { transform: translateY(-50%);  }
     70% { transform: translateY(50%); color:purple}
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:#fff }
+    100% { transform: translateY(0);color:mediumpurple }
 }
 
 @keyframes roll3 {
@@ -46,7 +46,7 @@ a { text-decoration: none;}
     50% { transform: translateY(-50%);  }
     70% { transform: translateY(50%); color:purple}
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:#fff }
+    100% { transform: translateY(0);color:mediumpurple }
 }
 
 @keyframes roll4 {
@@ -54,39 +54,75 @@ a { text-decoration: none;}
     50% { transform: translateY(-50%);  }
     70% { transform: translateY(50%); color:purple}
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:#fff }
+    100% { transform: translateY(0);color:mediumpurple }
 }
 @keyframes roll5 {
     0% { transform: translateY(120%)}
     50% { transform: translateY(-50%);  }
     70% { transform: translateY(50%); color:purple}
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:#fff }
+    100% { transform: translateY(0);color:mediumpurple}
 }
 @keyframes roll6 {
     0% { transform: translateY(120%)}
     50% { transform: translateY(-50%);  }
     70% { transform: translateY(50%); color:purple}
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:#fff }
+    100% { transform: translateY(0);color:mediumpurple }
 }
 @keyframes roll7 {
     0% { transform: translateY(120%)}
     50% { transform: translateY(-50%);  }
     70% { transform: translateY(50%); color:purple}
     90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:#fff }
+    100% { transform: translateY(0);color:mediumpurple }
 }
 
 
-.hello .scroll_txt { width: 100%; height: 100%; background-color:#cc99ff }
+.hello .scroll_txt { width: 100%; height: 100%; background-color:rgba(204,153,255,0.4) }
 .hello .scroll_txt .st_lst { width: 80%; height:50%; clear:both;  position: relative;  margin-left: 15%; position:relative;}
 .hello .scroll_txt .st_lst span { font-size: 14em; position:absolute;  transition:3s; transition-delay: 2s; }
 .hello .scroll_txt .st_lst span.it1 { left: -80%;  top: 18%; }
 .hello .scroll_txt .st_lst span.it2 { right: -80%; bottom: 18%; }
 
-.main { width: 100vw;  clear:both; display: none; position:relative; }
-.main .hd { width: 100%; height:20%; overflow: hidden;}
-.main .hd .gnb_lst { width: 95%; height: 100%; margin: 0 auto ; }
+.main {  clear:both; width: 100vw; height:100vh;  position:relative; display: none;  }
+.main .hd { width: 100%; height:20%; overflow: hidden; position:fixed; z-index: 999; top: 0; left: 0;}
+.main .hd .gnb_lst { width: 100%; height: 100%; margin: 0 auto ; }
 .main .hd .gnb_lst li { float:left; width: 25%;  }
-.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box;}
+.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(204,153,255,0.4) }
+
+.main .wrap { width: 100vw; height: 100vh; overflow:hidden; position:relative;  }
+/*ul 밖에 display: table;
+    table-layout: fixed;*/
+.main .wrap .spring_bg { width: 100%; height: 100% ; position:absolute; left: 0; top: 0; }
+/*ul에 display:table-cell*/
+.main .wrap .spring_bg .bg_box { width: 400%; height: 100vh; }
+.main .wrap .spring_bg .bg_box li { float:left; width: 100vw; height:100%; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+
+.main .wrap .spring_bg .bg_box li.bg1 { background-image:url("../bg/m_bg03.jpg");  }
+/*
+.main .wrap .spring_bg .bg_box li.bg2 { background-image: }
+.main .wrap .spring_bg .bg_box li.bg3 { background-image: }
+.main .wrap .spring_bg .bg_box li.bg4 { background-image: }*/
+
+.scroll_section { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.scroll_section .project_box { width: 78.5%; height: 80%; margin:  6% auto; }
+
+.scroll_section .project_box .pj_tit { color:#000;  font-size: 2em; margin-top: 15%; line-height: 3.0;}
+
+
+.scroll_section .container { width: 100%; height:80%; margin: 0 auto; overflow:hidden;  }
+.scroll_section .container .content { width: 200%; height: 100%; }
+.scroll_section .container .content li { width:12% ; height:80%; float:left; margin-right: 0.5%;  border-radius: 5px;}
+.scroll_section .container .content li .item { width: 100%; height: 40%; position: relative;  border-radius: 5px;}
+.scroll_section .container .content li  h1 { line-height: 2.0; padding-left: 5%; box-sizing: border-box;}
+.scroll_section .container .content li p.com { line-height: 2.0; padding-left: 5%; box-sizing: border-box;}
+.scroll_section .container .content li .item a { display: block; width: 100% ; height: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center;  text-indent: -9999px; border-radius: 5px; }
+.scroll_section .container .content li .item a:after { content:""; width: 100%; height: 100% ; background-color:rgba( 0,0,0,0.7); position:absolute; top: 0; left: 0; color:#fff; font-size: 1.5em; transition: 0.8s;  border-radius: 5px;}
+.scroll_section .container .content li .item a:hover::after { opacity:0; visibility:hidden; }
+
+/*콘텐츠 내용*/
+.scroll_section .container .content li.project1 .item a { background-image: url(../content/web1.png);}
+.scroll_section .container .content li.project2 .item a { background-image: url(../content/web3.png);}
+.scroll_section .container .content li.project3 .item a { background-image: url(../content/web4.png);}
+.scroll_section .container .content li.project4 .item a { background-image: url(../content/web5.png);}

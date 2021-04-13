@@ -88,88 +88,38 @@
             <div class="main clr">
                <header class="hd clr">
                 <ul class="gnb_lst clr">
-                    <li class="it1"><a href="">TAEEUN_K</a></li>
-                    <li class="it2"><a href="">Skill</a></li>
-                    <li class="it3"><a href="">Portfolio</a></li>
-                    <li class="it4"><a href="">Contact me</a></li>
+                     <li class="it1"><a href="index.html">TAEEUN_K</a></li>
+                    <li class="it3"><a href="index.html">intro</a></li>
+                    <li class="it4"><a href="project.html">project</a></li>
+                    <li class="it5"><a href="skill.html">skill</a></li>
+                    <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>
                 </ul>
             </header>
-                <div class="wrap clr">
-                  <div class="spring_bg clr">
-                      <ul class="bg_box clr">
-                          <li class="bg1"></li>
-                          <li class="bg2"></li>
-                          <li class="bg3"></li>
-                          <li class="bg4"></li>
-                      </ul>
-                  </div>
-                    <div class="scroll_section clr">
-                        <section class="project_box">
-                            <h2 class="pj_tit">Port Folio</h2>
-                            <div class="container">
-                                <ul class="content clr">
-                                    <li class="project project1">
-                                        <div class="item">
-                                            <a href="project01.html">1</a>
-                                        </div>
-                                        <h1>web1</h1>
-                                        <p class="com">익산문화관광 포트폴리오</p>
-                                    </li>
-                                    <li class="project project2">
-                                        <div class="item">
-                                            <a href="project02.html">2</a>
-                                        </div>
-                                        <h1>web3</h1>
-                                        <p class="com">경기도청 포트폴리오</p>
-                                    </li>
-                                    <li class="project project3">
-                                        <div class="item">
-                                            <a href="project03.html">3</a>
-                                        </div>
-                                        <h1>web4</h1>
-                                        <p class="com">시드물 포트폴리오</p>
-                                    </li>
-                                    <li class="project project4">
-                                        <div class="item">
-                                            <a href="project04.html">4</a>
-                                        </div>
-                                        <h1>web5</h1>
-                                        <p class="com">CJ(주) 포트폴리오</p>
-                                    </li>
-                                    <li class="project project5">
-                                        <div class="item">
-                                            <a href="project05.html">5</a>
-                                        </div>
-                                        <h1>제목</h1>
-                                    </li>
-                                    <li class="project project6">
-                                        <div class="item">
-                                            <a href="project06.html">6</a>
-                                        </div>
-                                        <h1>제목</h1>
-                                    </li>
-                                    <li class="project project7">
-                                        <div class="item">
-                                            <a href="project07.html">7</a>
-                                        </div>
-                                        <h1>제목</h1>
-                                    </li>
-                                    <li class="project project8">
-                                        <div class="item">
-                                            <a href="project08.html">8</a>
-                                        </div>
-                                        <h1>제목</h1>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
+                <div class="intro clr">
+                    <div class="left_box">
+                        <img src="./img/intro_bg.jpg" alt="">
                     </div>
-                    <!-- 스크롤 섹셕 끝 -->
-                    <div class="bar_box bar_max">
-                        <ul class="bar_lst">
-                            <li class="left_num">1</li>
-                            <li class="length"><span>애니바</span></li>
-                            <li class="right_num">N</li>
+                    <div class="right_box">
+                       <section class="txt_box">
+                            <h2 class="tit">"새로운 도약</h2>
+                            <p class="com">안녕하십니까, 
+                            “익숙한 것에 머무르기 보단 새로운 방향을 향해 꾸준히 자기계발을 하는 삶, 배움을 추구하는 자세”를 가진 김태은입니다.<br> IT분야 또한 시대의 흐름과 같이 빠르게 변화하고, 변화와 동시에 새로운 지식들을 배우고, 습득하여 자기주도적인 개발의 자세를 가져야 하는 직종이라고 생각합니다. 이러한 점이 저의 가치관과 부합하여 이 직종을 선택하게 되었고, 새로움과 변화를 추구하는 IT분야에 종사하고자 귀사에 지원하게 되었습니다.
+                            </p>
+                        </section>
+                        <ul class="info">
+                            <li class="info_lst">
+                                <h3 class="tit">EDUCATION</h3>
+                                <p class="com">중국산동사범대학교<br>국제대외한어교육학과<석사졸업&nbsp;2017년 ( 2015년 입학 )</p>
+                                <p class="com">우석대학교 신문방송 &amp; 중국어학과<br>학사졸업&nbsp;2015년 ( 2010년 입학 )</p>
+                            </li>
+                            <li class="info_lst">
+                                <h3 class="tit">INTERESTS</h3>
+                                <p class="com">외국어(영어,중국어)<br>역사, 교육, 차(tea)</p>
+                            </li>
+                            <li class="info_lst">
+                                <h3 class="tit">ACHIEVEMENTS</h3>
+                                <p class="com">시사어학원 중국어 전임강사 (2019.04 ~ 2020.05) 1년 2개월 근무</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -178,27 +128,7 @@
                 $(document).ready(function(){
                   
                  $(".main").delay(7200).slideDown(1000);
-                   
-                    var sct = $(window).scrollTop();
-                    var ht =  $(".bg_box li").height();
-                    var wd = $(".bg_box li").width();
-                    // 콘텐츠 스크롤시 배경 넘어가게
-                    //1. 스크롤 양 구하기
-                    //2. 스크롤 한 번 할 때 슬라이드 한번
-                    //3. 스크롤 한 번 할 때 헤드 배경색 변경
-                    
-                    $(window).scroll(function(){
-                        if( sct >= ht){
-                        nt();
-                        }
-                        
-                        function nt(){
-                            $(".bg_box").not(":animated").animate({"margin-left":-wd},700,function(){
-                                $(".bg_box li").eq(0).appendTo($(".bg_box"));
-                                $(".bg_box").css("margin-left","0px");
-                            })
-                        }
-                    });
+                
                 })
                 </script>
             </div>

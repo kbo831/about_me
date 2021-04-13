@@ -111,4 +111,4 @@ a { text-decoration: none;}
 .right_box .txt_box .tit { line-height: 3.0 ; }
 .right_box .txt_box .com { line-height: 2.0 ; text-indent: 20px; word-break: break-all; letter-spacing: 2px;}
 .right_box ul.info {width: 80%; margin: 5% auto; }
-.right_box ul.info .info_lst { float: left; width: 33.3333%;text-align: center; }
+.right_box ul.info .info_lst { float: left; width: 33.3333%;text-align: center; line-height: 3.0}

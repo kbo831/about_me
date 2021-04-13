@@ -51,39 +51,6 @@
 <body>
     <div class="all">
         <div class="wrap">
-            <div class="hello">
-                <div class="hello_wrap">
-                    <div class="word_lst clr">
-                        <span class="it1">H</span>
-                        <span class="it2">e</span>
-                        <span class="it3">l</span>
-                        <span class="it4">l</span>
-                        <span class="it5">o</span>
-                        <span class="it6">w</span>
-                        <span class="it7">!</span>
-                    </div>
-                </div>
-                <div class="scroll_txt">
-                    <div class="st_lst clr">
-                        <span class="it1">TAEEUN</span>
-                        <span class="it2">PortFolio</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <script>
-                $(document).ready(function() {
-                    $(".hello_wrap").delay(4500).fadeOut(1000);
-                    $(".scroll_txt").fadeIn(1000,function(){
-                        $(".st_lst span.it1").not(":animated").animate({"left":"0px"},1500);
-                        $(".st_lst span.it2").not(":animated").animate({"right":"0px"},1500);
-                        
-                    });
-                    $(".hello").delay(6500).fadeOut(800);
-                });
-            </script>
-
             <!-- 여기 div 2개 canvs는 배경? -->
             <div class="main clr">
                <header class="hd clr">
@@ -132,7 +99,7 @@
                <script>
                 $(document).ready(function(){
                   
-                 $(".main").delay(7200).slideDown(1000);
+                 $(".main").slideDown(1000);
                 
                 })
                 </script>

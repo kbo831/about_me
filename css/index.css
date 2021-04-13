@@ -9,7 +9,7 @@ a { text-decoration: none;}
 
 .all { width: 100vw; height: 100vh;}
 .wrap { width: 100%; height:100%; }
-.hello { width: 100% ; height: 100vw; background-image:url(../bg/load_bg.jpg); position:fixed; top: 0; left: 0; }
+.hello { width: 100% ; height: 100vw; position:fixed; top: 0; left: 0; }
 .hello .hello_wrap { width: 100% ; height:100%;  }
 .hello .hello_wrap .word_lst { width: 80%; height:50%; clear:both;  position: relative;}
 
@@ -23,7 +23,7 @@ a { text-decoration: none;}
  animation-name:roll4; animation-delay: 0.9s}
 .hello .hello_wrap .word_lst span.it5 {left:62%;  animation-name:roll5; animation-delay: 1.2s }
 .hello .hello_wrap .word_lst span.it6 {left:72%;  animation-name:roll6; animation-delay: 1.5s }
-.hello .hello_wrap .word_lst span.it7 {left:85%;  animation-name:roll7; animation-delay: 1.8s }
+.hello .hello_wrap .word_lst span.it7 {left:88%;  animation-name:roll7; animation-delay: 1.8s }
 
 @keyframes roll1 {
     0% { transform: translateY(120%) ;  }
@@ -81,15 +81,17 @@ a { text-decoration: none;}
 
 .hello .scroll_txt { width: 100%; height: 100%; background-color:rgba(204,153,255,0.4) }
 .hello .scroll_txt .st_lst { width: 80%; height:50%; clear:both;  position: relative;  margin-left: 15%; position:relative;}
-.hello .scroll_txt .st_lst span { font-size: 14em; position:absolute;  transition:3s; transition-delay: 2s; }
+.hello .scroll_txt .st_lst span { font-size: 14em; position:absolute;  transition:3s; transition-delay: 2s; color: #fff; text-shadow: 1px 1px 0px 5px brown; }
 .hello .scroll_txt .st_lst span.it1 { left: -80%;  top: 18%; }
 .hello .scroll_txt .st_lst span.it2 { right: -80%; bottom: 18%; }
 
-.main {  clear:both; width: 100vw; height:100vh;  position:relative; display: none;  }
+.main {  clear:both; width: 100vw; height:100vh;  position:relative; display: none;  overflow: hidden;}
 .main .hd { width: 100%; height:20%; overflow: hidden; position:fixed; z-index: 999; top: 0; left: 0;}
 .main .hd .gnb_lst { width: 100%; height: 100%; margin: 0 auto ; }
-.main .hd .gnb_lst li { float:left; width: 25%;  }
+.main .hd .gnb_lst li { float:left; width: 20%;  }
 .main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(204,153,255,0.4) }
+.main .hd .gnb_lst li:hover { background-color: darkorchid;}
+.main .hd .gnb_lst li:hover a { color: #fff; }
 
 .main .wrap { width: 100vw; height: 100vh; overflow:hidden; position:relative;  }
 /*ul 밖에 display: table;
@@ -99,30 +101,14 @@ a { text-decoration: none;}
 .main .wrap .spring_bg .bg_box { width: 400%; height: 100vh; }
 .main .wrap .spring_bg .bg_box li { float:left; width: 100vw; height:100%; background-repeat: no-repeat; background-position: center center; background-size: cover; }
 
-.main .wrap .spring_bg .bg_box li.bg1 { background-image:url("../bg/m_bg03.jpg");  }
-/*
-.main .wrap .spring_bg .bg_box li.bg2 { background-image: }
-.main .wrap .spring_bg .bg_box li.bg3 { background-image: }
-.main .wrap .spring_bg .bg_box li.bg4 { background-image: }*/
+.main .wrap .spring_bg .bg_box li.bg1 {  }
 
-.scroll_section { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.scroll_section .project_box { width: 78.5%; height: 80%; margin:  6% auto; }
-
-.scroll_section .project_box .pj_tit { color:#000;  font-size: 2em; margin-top: 15%; line-height: 3.0;}
-
-
-.scroll_section .container { width: 100%; height:80%; margin: 0 auto; overflow:hidden;  }
-.scroll_section .container .content { width: 200%; height: 100%; }
-.scroll_section .container .content li { width:12% ; height:80%; float:left; margin-right: 0.5%;  border-radius: 5px;}
-.scroll_section .container .content li .item { width: 100%; height: 40%; position: relative;  border-radius: 5px;}
-.scroll_section .container .content li  h1 { line-height: 2.0; padding-left: 5%; box-sizing: border-box;}
-.scroll_section .container .content li p.com { line-height: 2.0; padding-left: 5%; box-sizing: border-box;}
-.scroll_section .container .content li .item a { display: block; width: 100% ; height: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center;  text-indent: -9999px; border-radius: 5px; }
-.scroll_section .container .content li .item a:after { content:""; width: 100%; height: 100% ; background-color:rgba( 0,0,0,0.7); position:absolute; top: 0; left: 0; color:#fff; font-size: 1.5em; transition: 0.8s;  border-radius: 5px;}
-.scroll_section .container .content li .item a:hover::after { opacity:0; visibility:hidden; }
-
-/*콘텐츠 내용*/
-.scroll_section .container .content li.project1 .item a { background-image: url(../content/web1.png);}
-.scroll_section .container .content li.project2 .item a { background-image: url(../content/web3.png);}
-.scroll_section .container .content li.project3 .item a { background-image: url(../content/web4.png);}
-.scroll_section .container .content li.project4 .item a { background-image: url(../content/web5.png);}
+/*intro*/
+.intro { width: 100%; height: 100%; margin-top: 4em; overflow: hidden; clear:both; }
+.left_box {  float: left ; background-color: #fbe2e6 ; }
+.right_box { width: calc(100% - 560px); margin-top: 4em; margin-left: 560px; padding: 3%; padding-top: 0; box-sizing: border-box; }
+.right_box .txt_box { width:80%; margin: 0 auto}
+.right_box .txt_box .tit { line-height: 3.0 ; }
+.right_box .txt_box .com { line-height: 2.0 ; text-indent: 20px; }
+.right_box ul.info {width: 80%; margin: 5% auto;}
+.right_box ul.info .info_lst { float: left; width: 33.3333%;text-align: center; }

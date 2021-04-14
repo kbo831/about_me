@@ -87,4 +87,13 @@
 .pg2 .right_box .web_info h3.tit { font-size: 25px }
 
 /*color*/
-.pg2 .right_box .web_info .color_lst { }
+.pg2 .right_box .web_info .color_lst { width: 100%;  }
+.pg2 .right_box .web_info .color_lst li { width: 100%; margin: 2% 0; }
+.pg2 .right_box .web_info .color_lst li span { display: block;  width: 10%; height: 50px; float:left; margin-right: 2% }
+.pg2 .right_box .web_info .color_lst li p.color_name { font-size: 20px; line-height: 2.5; } 
+
+.pg2 .right_box .web_info .color_lst li.color_it1 span { background-color: #f064a5  } 
+.pg2 .right_box .web_info .color_lst li.color_it2 span { background-color: #a6ce39  }
+.pg2 .right_box .web_info .color_lst li.color_it3 span { background-color: #f7941e  }
+.pg2 .right_box .web_info .color_lst li.color_it4 span { background-color: #661773
+}

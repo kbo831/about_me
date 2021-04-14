@@ -71,7 +71,13 @@
 
 
 /*right_box*/
-.pg2 .right_box { width: 80%;  float: left;  box-sizing: border-box; padding-top: 4%; padding-left: 5%;}
-.pg2 .right_box .text_box { }
-.pg2 .right_box .text_box a.git_add { display: block; line-height: 3.0; font-size: 25px; }
-.pg2 .right_box .text_box a.git_add span { display: block; width: 10%; background-image: url("../img")}
+.pg2 .right_box { width: 80%;  float: left;  box-sizing: border-box; padding-top: 4%; padding-left: 5%; }
+.pg2 .right_box .project_dsc { padding-bottom: 5%; }
+.pg2 .right_box .project_dsc h2.tit { font-size: 25px; line-height: 3.0 }
+.pg2 .right_box .project_dsc p.com { font-size: 22px; word-break: break-all; letter-spacing: 5px; line-height: 1.6 }
+
+.pg2 .right_box .text_box .git_ico { display: block; width: 5%; height:auto;  float: left;  margin-right:2% }
+.pg2 .right_box .text_box a.git_add { display: block; line-height: 3.0; font-size: 25px; color: #000 }
+.pg2 .right_box .text_box a.git_add:hover { color: #6600cc; }
+
+

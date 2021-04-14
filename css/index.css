@@ -103,15 +103,4 @@ a { text-decoration: none;}
 
 .main .wrap .spring_bg .bg_box li.bg1 {  }
 
-/*intro*/
-.intro { width: 100%; height: 100%; margin-top: 4.1em; overflow: hidden; clear:both; }
-.left_box {  float: left ; background-color: #fbe2e6 ; }
-.right_box { width: calc(100% - 560px); margin-top: 4em; margin-left: 560px; padding: 3%; padding-top: 0; box-sizing: border-box; }
-.right_box .txt_box { width:80%; margin: 0 auto; margin-bottom: 2em}
-.right_box .txt_box h2.tit { line-height: 3.0 ; position:relative; padding-left: 2em }
-.right_box .txt_box h2.tit:before { content:"▶"; padding-right: 20px; font-size: 0.8em; position:absolute; top: 14%; left: 0; }
-.right_box .txt_box h2.tit:hover::before {   }
-.right_box .txt_box .com { line-height: 2.0 ; text-indent: 20px; word-break: break-all; letter-spacing: 2px;}
-.right_box ul.info {width: 80%; margin: 5% auto; }
-.right_box ul.info .info_lst { float: left; width: 33.3333%;text-align: center; line-height: 2.0 ; border-top:1px solid #eee; border-bottom:1px solid #eee; min-height: 13em }
-.right_box ul.info .info_lst h3.tit { line-height: 3.0 } 
+

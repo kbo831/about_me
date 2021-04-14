@@ -12,6 +12,9 @@ a { text-decoration: none;}
 .wrap .hd { width: 95%; ; position:fixed; z-index: 99}
 .wrap .hd a { display: block; width: 20%; height:66.47px;  text-align: center;  padding:1%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(204,153,255,0.4); float: left}
 
+.wrap .hd a:hover { background-color: darkorchid; }
+.wrap .hd a:hover { color: #fff; }
+
 .wrap .hd .fix_box { width: 80%; float:left; position: relative; }
 .wrap .hd .gnb_lst { width: 100% ; margin: 0 auto ; display: none; overflow: hidden; position:absolute; right:0; top: 0;}
 .wrap .hd .gnb_lst li { float:left; width: 20.5%;  }

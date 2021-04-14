@@ -70,20 +70,24 @@
                             $(".gnb_lst").fadeToggle(500);
                         });
                         $(".pg1").mouseenter(function() {
-                            $(".pg1 h1").not(":animated").animate({
+                            $(".pg1 h1,.ani_box").not(":animated").animate({
                                 "margin-top": "0px"
-                            }, 700).fadeIn();
+                            }, 700).fadeIn(1000);
                         })
                     });
                 </script>
             </header>
             <div class="content">
-                <section class="pg pg1">
+                <section class="pg pg1 clr">
                     <h1>익산문화관광 포트폴리오</h1>
-                    <div class="anibox ">
-                        <div class="ani_wrap">
-                            <span class="long"></span>
-                            <span class="circle"></span>
+                    <div class="ani_box clr">
+                        <div class="ani_inner clr">
+                            <div class="ani_con">
+                               <div class="ani_inner2 clr">
+                                   <span class="long"></span>
+                                   <span class="circle"></span>
+                               </div>
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,59 @@
 @charset "utf-8";
 
 .content { width: 100%;  height: 100vh; }
-.content .pg { width: 100%; min-height: 800px;  overflow: hidden;  }
-.content .pg1 h1 { width: 100%;  line-height: 800px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#cd1389; }
+.content .pg { width: 100%; min-height: 800px;  overflow: hidden;  position:relative; padding-top:4.5%; }
+.content .pg1 h1 { width: 100%;  height: 1005; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#cd1389; }
+.content .pg1 .ani_box { width: 100%; height:100px; clear: both; display: none; }
+.content .pg1 .ani_box .ani_inner { width: 10%;  height: 100%; margin: 0 auto; position: relative;}
+.content .pg1 .ani_con { position: absolute; bottom: 25%; left: 50%; z-index: 90; width: 50%; height:100%;  margin-left: -2.5%; border:3px solid #ebd6ff; border-radius: 200px; animation-name: inner1; animation-iteration-count: infinite; animation-duration: 1.5s; animation-timing-function: ease-in-out; }
+.content .pg1 .ani_con:hover { animation-play-state: paused; }
+
+@keyframes inner1 { 
+    0% { 
+        transform: translateY(0)
+    }
+    50% { transform: translateY(20%)
+    }
+    100% { transform: translateY(0)     
+    }
+}
+
+.content .pg1 .ani_con .ani_inner2 { width: 100%; height: 100% ; position: relative; overflow: hidden; }
+.content .pg1 .ani_con .ani_inner2 span { position: absolute; display: block ;  }
+.content .pg1 .ani_con .ani_inner2:hover span { animation-play-state: paused; }
+.content .pg1 .ani_con .ani_inner2 span.long { width: 10%; height: 50%; background-color: #ebd6ff; left: 50%; top: 15%; border-radius: 5px; margin-left: -5%; animation-name: inner2; animation-duration: 3s; animation-iteration-count: infinite;animation-timing-function: linear; }
+
+.content .pg1 .ani_con .ani_inner2 span.circle { width: 10%; height: 10%; background-color: #ebd6ff; border-radius: 5px; left: 50%; bottom: 15%; margin-left: -5%; animation-name: inner3; animation-duration: 4s; animation-iteration-count: infinite;  animation-timing-function: linear; }
+
+@keyframes inner2 { 
+    0% { 
+        height:0%; 
+    }
+    25% {  height:12.5%;
+    }
+    50% { height:25%; 
+        
+    }
+    75% { height:37.5%;
+    }
+    100% { height:50%;  background-color: darkorchid;
+    }
+}
+
+
+@keyframes inner3 { 
+    0% { 
+         transform: scale(0.2)
+    }
+    25% { transform: scale(1)
+    }
+    50% { transform: scale(0.2) 
+    }
+    75% {transform: scale(1)
+    }
+    100% { transform: scale(0.2); background-color: darkorchid;
+    }
+}
+
+
 

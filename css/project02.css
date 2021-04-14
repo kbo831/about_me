@@ -1,10 +1,17 @@
 @charset "utf-8";
 
+
+.wrap .hd a {  background-color: rgba(51,153,255,0.5); }
+.wrap .hd a:hover {  background-color: #073bd9; }
+.wrap .hd .gnb_btn { border: 1px solid rgba(51,153,255,0.5); background-image: url(../ico/sub_gnb_btm.png); }
+.wrap .hd .gnb_lst li a { background-color: rgba(51,153,255,0.5);}
+
+
 .content { width: 100%;  height: 100vh;  }
 .content .pg { width: 100%; min-height: 979px; position:relative; padding-top:4.5%; overflow: hidden;  box-sizing: border-box; }
-.content .pg1 h1 { width: 100%; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#cd1389; }
+.content .pg1 h1 { width: 100%; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#0051a3; }
 .content .pg1 .ani_box { width: 100%; height:100px; clear: both; display: none; }
-.content .pg1 .ani_box .ani_inner { width: 10%;  height: 100%; margin: 0 auto; position: relative;}
+.content .pg1 .ani_box .ani_inner { width: 10%;  height: 100%; margin: 0 auto; position: relative; }
 .content .pg1 .ani_con { position: absolute; bottom: 25%; left: 50%; z-index: 90; width: 50%; height:100%;  margin-left: -2.5%; border:3px solid #ebd6ff; border-radius: 200px; animation-name: inner1; animation-iteration-count: infinite; animation-duration: 1.5s; animation-timing-function: ease-in-out; }
 .content .pg1 .ani_con:hover { animation-play-state: paused; }
 
@@ -59,7 +66,7 @@
 
 .pg2 h1.tit {  line-height: 2.0; font-size: 40px; background-color:  rgba(122,5,199,0.5); box-sizing: border-box; padding-left: 8%; margin-top: 1.5%; color: #eee; font-weight: 400; }
 /*left_box*/
-.pg2 .left_box { width: 20%; }
+.pg2 .left_box { width: 20%; float:left;}
 .pg2 .project_img { width: 100%; margin-top: 20% }
 .pg2 .project_img li { width: 100%; margin: 3% 0 ; position:relative; }
 .pg2 .project_img li a, .pg2 .project_img li .plus { display: block; width: 100%; height: 160px; }
@@ -69,7 +76,31 @@
 .pop { width: 100%; height:100%; background-color: rgba(204,153,255,0.4);  position:fixed; left: 0; top: 0;  display: none; z-index: 100; }
 
 
-#cover1 
 
 /*right_box*/
-.pg2 .right_box { width: 80%; }
+.pg2 .right_box { width: 80%;  float: left;  box-sizing: border-box; padding-top: 4%; padding-left: 5%; }
+.pg2 .right_box .project_dsc { padding-bottom: 5%; }
+.pg2 .right_box .project_dsc h2.tit { font-size: 25px; line-height: 3.0 }
+
+.pg2 .right_box .project_dsc ul { width: 100%; }
+.pg2 .right_box .project_dsc ul li { width: 50%; float:left; }
+.pg2 .right_box .project_dsc ul li a.git_add { display: block; line-height: 3.0; font-size: 25px; color: #000; line-height: 1.7}
+.pg2 .right_box .project_dsc ul li  .git_ico { display: block; width: 8%; height:auto;  float: left;  margin-right:2% }
+.pg2 .right_box .project_dsc ul li a.git_add:hover { color: #6600cc; }
+.pg2 .right_box .project_dsc .text_box p.com { font-size: 22px; word-break: break-all; letter-spacing: 5px; line-height: 1.6 }
+
+.pg2 .right_box .web_info { width: 100%; margin-top: 5%}
+.pg2 .right_box .web_info > li { width: 50%; float:left; }
+.pg2 .right_box .web_info h3.tit { font-size: 25px }
+
+/*color*/
+.pg2 .right_box .web_info .color_lst { width: 100%;  }
+.pg2 .right_box .web_info .color_lst li { width: 100%; margin: 2% 0; }
+.pg2 .right_box .web_info .color_lst li span { display: block;  width: 10%; height: 50px; float:left; margin-right: 2% }
+.pg2 .right_box .web_info .color_lst li p.color_name, .pg2 .right_box .web_info .font p.font_type { font-size: 20px; line-height: 2.5; } 
+
+.pg2 .right_box .web_info .color_lst li.color_it1 span { background-color: #f064a5  } 
+.pg2 .right_box .web_info .color_lst li.color_it2 span { background-color: #a6ce39  }
+.pg2 .right_box .web_info .color_lst li.color_it3 span { background-color: #f7941e  }
+.pg2 .right_box .web_info .color_lst li.color_it4 span { background-color: #661773
+}

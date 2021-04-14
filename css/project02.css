@@ -59,7 +59,7 @@
 
 .pg2 h1.tit {  line-height: 2.0; font-size: 40px; background-color:  rgba(122,5,199,0.5); box-sizing: border-box; padding-left: 8%; margin-top: 1.5%; color: #eee; font-weight: 400; }
 /*left_box*/
-.pg2 .left_box { width: 20%; float:left;}
+.pg2 .left_box { width: 20%; }
 .pg2 .project_img { width: 100%; margin-top: 20% }
 .pg2 .project_img li { width: 100%; margin: 3% 0 ; position:relative; }
 .pg2 .project_img li a, .pg2 .project_img li .plus { display: block; width: 100%; height: 160px; }
@@ -69,9 +69,7 @@
 .pop { width: 100%; height:100%; background-color: rgba(204,153,255,0.4);  position:fixed; left: 0; top: 0;  display: none; z-index: 100; }
 
 
+#cover1 
 
 /*right_box*/
-.pg2 .right_box { width: 80%;  float: left;  box-sizing: border-box; padding-top: 4%; padding-left: 5%;}
-.pg2 .right_box .text_box { }
-.pg2 .right_box .text_box a.git_add { display: block; line-height: 3.0; font-size: 25px; }
-.pg2 .right_box .text_box a.git_add span { display: block; width: 10%; background-image: url("../img")}
+.pg2 .right_box { width: 80%; }

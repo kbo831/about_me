@@ -103,7 +103,7 @@
                 </section>
                 <!-- 페이지2-->
                 <section class="pg pg2">
-                    <h1 class="tit">포트폴리오 요약</h1>
+                    <h1 class="tit">포트폴리오 설명</h1>
                     <div class="left_box">
                         <ul class="project_img">
                             <li class="it1">
@@ -123,43 +123,118 @@
                                 <a href="#cover2">
                                     <img src="./img/project_img_w102.png" alt="익산문화관광02">
                                 </a>
+                                <!--
+                           <div class="cover">
+                                <div class="plus">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                </div>
+                            </div>
+-->
                             </li>
                             <li class="it3">
                                 <a href="#cover3">
                                     <img src="./img/project_img_w103.png" alt="익산문화관광03">
                                 </a>
+                                <!--
+                            <div class="cover">
+                                <div class="plus">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                </div>
+                            </div>
+-->
                             </li>
                             <li class="it4">
                                 <a href="#cover4">
-                                    <img src="./img/project_img_w104.png" alt="익산문화관광04">
-                                </a>
+                                    <img src="./img/project_img_w104.png" alt="익산문화관광04"></a>
+                                <!--
+                          <div class="cover">
+                                <div class="plus">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                </div>
+                            </div>
+-->
                             </li>
                         </ul>
                     </div>
                     <div class="right_box">
-                        <div class="text_box">
-                            <a href="https//:kbo831.github.io/web1" class="git_add"><img src="" alt="" class="git_ico">깃주소:https:kbo831.github.io/web1
-                            </a>
-                            <p class="tool"><strong>사용 툴</strong>HTML / CSS3 / JQuery</p>
-                        </div>
                         <section class="project_dsc">
-                            <h2 class="tit">1&#41;제작 의도</h2>
-                            <p class="com">익산시 문화관광페이지를 거제문화관광 홈페이지로 벤치마킹하여, 익산시의 음식, 축제, 교통 등의 문화관광부분에서 익산시민만 아는 정보를 모아 알찬 관광을 할 수 있게 사이트를 구성
-                            </p>
+                            <h2 class="tit"></h2>
+                            <p class="com"></p>
+                            <a href="" class="git_add"></a>
                         </section>
                     </div>
                 </section>
                 <!-- 페이지2 끝-->
             </div>
             <!-- 포트폴리오 이미지 확대 끝-->
+            <div class="pop" id="cover1">
+                <figure class="vs_box">
+                    <ul class="vs_lst">
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                    </ul>
+                </figure>
+                <button class="close">close</button>
+            </div>
+
+            <div class="pop" id="cover2">
+                <figure class="vs_box">
+                    <ul class="vs_lst">
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                    </ul>
+                </figure>
+                <button class="close">close</button>
+            </div>
+            <div class="pop" id="cover3">
+                <figure class="vs_box">
+                    <ul class="vs_lst">
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                    </ul>
+                </figure>
+                <button class="close">close</button>
+            </div>
+            <div class="pop" id="cover4">
+                <figure class="vs_box">
+                    <ul class="vs_lst">
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                        <li class="it"></li>
+                    </ul>
+                </figure>
+                <button class="close">close</button>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    
+                        $(".project_img li a").click(function() {
+                            $(".pop").fadeIn();
+                        });
+
+                        $(".pop .close").click(function() {
+                            $(".pop").fadeOut();
+                        });
+                    //슬라이드
+                    
+                });
+            </script>
         </div>
+        <!-- main 끝 전 -->
+        <script>
 
+        </script>
     </div>
-    <!-- main 끝 전 -->
-    <script>
-
-    </script>
-
     <!-- wrap 끝 전 -->
 
 

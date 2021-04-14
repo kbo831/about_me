@@ -135,15 +135,16 @@
         <script>
             $(document).ready(function() {
 
-                $(".main").slideDown(1000);
+                $(".main").fadeIn(2000);
 
                 var sct = $(window).scrollTop();
                 var ht = $(".bg_box li").height();
                 var wd = $(".bg_box li").width();
                 // 콘텐츠 스크롤시 배경 넘어가게
                 //1. 스크롤 양 구하기
-                //2. 스크롤 한 번 할 때 슬라이드 한번
-                //3. 스크롤 한 번 할 때 헤드 배경색 변경
+                //2. 스크롤 한 번 할 때 프로젝트 슬라이드 한번
+                //3.nice 플러그인 사용?
+             
 
                 $(window).scroll(function() {
                     if (sct >= ht) {

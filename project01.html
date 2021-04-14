@@ -56,30 +56,32 @@
                 <a href="index.html" class="home">TAEEUN_K</a>
                 <div class="fix_box">
                     <ul class="gnb_lst">
-                    <li class="it3"><a href="intro.html">intro</a></li>
-                    <li class="it4"><a href="project.html">project</a></li>
-                    <li class="it5"><a href="skill.html">skill</a></li>
-                    <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>
-                </ul>
-                <button class="gnb_btn">
-                </button>
+                        <li class="it3"><a href="intro.html">intro</a></li>
+                        <li class="it4"><a href="project.html">project</a></li>
+                        <li class="it5"><a href="skill.html">skill</a></li>
+                        <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>
+                    </ul>
+                    <button class="gnb_btn">
+                    </button>
                 </div>
                 <script>
-                $(document).ready(function(){
-                   $(".gnb_btn").click(function(){
-                        $(".gnb_lst").fadeToggle(500); 
-                   });
-                   $(".pg1").mouseenter(function(){
-                       $(".pg1 h1").not(":animated").animate({"margin-top":"0px"},700).fadeIn();
-                   })
-                });
+                    $(document).ready(function() {
+                        $(".gnb_btn").click(function() {
+                            $(".gnb_lst").fadeToggle(500);
+                        });
+                        $(".pg1").mouseenter(function() {
+                            $(".pg1 h1").not(":animated").animate({
+                                "margin-top": "0px"
+                            }, 700).fadeIn();
+                        })
+                    });
                 </script>
             </header>
             <div class="content">
                 <section class="pg pg1">
                     <h1>익산문화관광 포트폴리오</h1>
                     <div class="anibox ">
-                       <div class="ani_wrap">
+                        <div class="ani_wrap">
                             <span class="long"></span>
                             <span class="circle"></span>
                         </div>

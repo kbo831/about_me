@@ -36,10 +36,20 @@
     <!--공통, 메인 css링크-->
     <link rel="stylesheet" href="./css/subcommon.css">
     <link rel="stylesheet" href="./css/project01.css">
-    <!--구글애널리틱스 소스코드-->
-    <script async src="./js/google_analyics.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+   <!--구글애널리틱스 소스코드:Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYHW3BJNLM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYHW3BJNLM');
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script>
     <![endif]-->
@@ -83,21 +93,52 @@
                     <div class="ani_box clr">
                         <div class="ani_inner clr">
                             <div class="ani_con">
-                               <div class="ani_inner2 clr">
-                                   <span class="long"></span>
-                                   <span class="circle"></span>
-                               </div>
+                                <div class="ani_inner2 clr">
+                                    <span class="long"></span>
+                                    <span class="circle"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+<!-- 페이지2-->
                 <section class="pg pg2">
-                    <h1></h1>
+                      <h1 class="tit">포트폴리오 설명</h1>
+                    <div class="left_box">
+                    <ul class="project_img">
+                        <li class="it1">
+                            <a href=""><img src="" alt=""></a>
+                            <div class="cover"></div>
+                        </li>
+                        <li class="it2">
+                            <a href=""><img src="" alt=""></a>
+                            <div class="cover"></div>
+                        </li>
+                        <li class="it3">
+                            <a href=""><img src="" alt=""></a>
+                            <div class="cover"></div>
+                        </li>
+                        <li class="it4">
+                            <a href=""><img src="" alt=""></a>
+                            <div class="cover"></div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="right_box">
+                        <section class="project_dsc">
+                            <h2 class="tit"></h2>
+                            <p class="com"></p>
+                            <a href="" class="git_add"></a>
+                        </section>
+                    </div>
                 </section>
-                <section class="pg pg3">
-                    <h1></h1>
-                </section>
+                <!-- 페이지2 끝-->
             </div>
+             <!-- 포트폴리오 이미지 확대 끝-->
+          <!--  <div class="pop" id="cover1"><img src="" alt=""><button class="close">close</button></div>
+            <div class="pop" id="cover2"><img src="" alt=""><button class="close">close</button></div>
+            <div class="pop" id="cover3"><img src="" alt=""><button class="close">close</button></div>
+            <div class="pop" id="cover4"><img src="" alt=""><button class="close">close</button></div>-->
         </div>
         <!-- main 끝 전 -->
         <script>

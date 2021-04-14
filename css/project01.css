@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-.content { width: 100%;  height: 100vh; }
-.content .pg { width: 100%; min-height: 800px;  overflow: hidden;  position:relative; padding-top:4.5%; }
-.content .pg1 h1 { width: 100%;  height: 1005; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#cd1389; }
+.content { width: 100%;  height: 100vh;  }
+.content .pg { width: 100%; min-height: 979px; position:relative; padding-top:4.5%; overflow: hidden;  box-sizing: border-box; }
+.content .pg1 h1 { width: 100%; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#cd1389; }
 .content .pg1 .ani_box { width: 100%; height:100px; clear: both; display: none; }
 .content .pg1 .ani_box .ani_inner { width: 10%;  height: 100%; margin: 0 auto; position: relative;}
 .content .pg1 .ani_con { position: absolute; bottom: 25%; left: 50%; z-index: 90; width: 50%; height:100%;  margin-left: -2.5%; border:3px solid #ebd6ff; border-radius: 200px; animation-name: inner1; animation-iteration-count: infinite; animation-duration: 1.5s; animation-timing-function: ease-in-out; }
@@ -55,5 +55,12 @@
     }
 }
 
+/* 포트폴리오: 페이지2 */
 
+.pg2 h1.tit {  line-height: 2.0; font-size: 40px; background-color:  rgba(122,5,199,0.5); box-sizing: border-box; padding-left: 8%; margin-top: 1.5%; color: #eee; font-weight: 400; }
+.pg2 .left_box { width: 20%; }
+.pg2 .project_img { width: 100%; margin-top: 20% }
+.pg2 .project_img li { width: 100%; margin: 3% 0 }
+.pg2 .project_img li a { display: block; width: 100%; height: 160px; background-color: blueviolet; }
 
+.pg2 .right_box { width: 80%; }

@@ -35,8 +35,19 @@
     <link rel="stylesheet" href="./css/clear.css">
     <!--공통, 메인 css링크-->
     <link rel="stylesheet" href="./css/index.css">
-    <!--구글애널리틱스 소스코드-->
-    <script async src="./js/google_analyics.js"></script>
+    <!--구글애널리틱스 소스코드:Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYHW3BJNLM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYHW3BJNLM');
+    </script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 
     <!--[if lt IE 9]>
@@ -75,10 +86,14 @@
             <script>
                 $(document).ready(function() {
                     $(".hello_wrap").delay(4500).fadeOut(1000);
-                    $(".scroll_txt").fadeIn(1000,function(){
-                        $(".st_lst span.it1").not(":animated").animate({"left":"0px"},1500);
-                        $(".st_lst span.it2").not(":animated").animate({"right":"0px"},1500);
-                        
+                    $(".scroll_txt").fadeIn(1000, function() {
+                        $(".st_lst span.it1").not(":animated").animate({
+                            "left": "0px"
+                        }, 1500);
+                        $(".st_lst span.it2").not(":animated").animate({
+                            "right": "0px"
+                        }, 1500);
+
                     });
                     $(".hello").delay(6500).fadeOut(800);
                 });
@@ -86,24 +101,24 @@
 
             <!-- 여기 div 2개 canvs는 배경? -->
             <div class="main clr">
-               <header class="hd clr">
-                <ul class="gnb_lst clr">
-                     <li class="it1"><a href="index.html">TAEEUN_K</a></li>
-                    <li class="it3"><a href="intro.html">intro</a></li>
-                    <li class="it4"><a href="project.html">project</a></li>
-                    <li class="it5"><a href="skill.html">skill</a></li>
-                    <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>
-                </ul>
-            </header>
+                <header class="hd clr">
+                    <ul class="gnb_lst clr">
+                        <li class="it1"><a href="index.html">TAEEUN_K</a></li>
+                        <li class="it3"><a href="intro.html">intro</a></li>
+                        <li class="it4"><a href="project.html">project</a></li>
+                        <li class="it5"><a href="skill.html">skill</a></li>
+                        <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>
+                    </ul>
+                </header>
                 <div class="intro clr">
                     <div class="left_box">
                         <img src="./img/intro_bg.jpg" alt="">
                     </div>
                     <div class="right_box">
-                       <section class="txt_box">
+                        <section class="txt_box">
                             <h2 class="tit">지원동기</h2>
                             <p class="com">
-                            “익숙한 것에 머무르기 보단 새로운 방향을 향해 꾸준히 자기계발을 하는 삶, 배움을 추구하는 자세”를 가진 김태은입니다. IT분야 또한 시대의 흐름과 같이 빠르게 변화하고, 변화와 동시에 새로운 지식들을 배우고, 습득하여 자기주도적인 개발의 자세를 가져야 하는 직종이라고 생각합니다. 이러한 점이 저의 가치관과 부합하여 이 직종을 선택하게 되었고, 새로움과 변화를 추구하는 IT분야에 종사하고자 귀사에 지원하게 되었습니다.
+                                “익숙한 것에 머무르기 보단 새로운 방향을 향해 꾸준히 자기계발을 하는 삶, 배움을 추구하는 자세”를 가진 김태은입니다. IT분야 또한 시대의 흐름과 같이 빠르게 변화하고, 변화와 동시에 새로운 지식들을 배우고, 습득하여 자기주도적인 개발의 자세를 가져야 하는 직종이라고 생각합니다. 이러한 점이 저의 가치관과 부합하여 이 직종을 선택하게 되었고, 새로움과 변화를 추구하는 IT분야에 종사하고자 귀사에 지원하게 되었습니다.
                             </p>
                         </section>
                         <section class="txt_box">
@@ -129,12 +144,12 @@
                     </div>
                 </div>
                 <!-- main 끝 전 -->
-               <script>
-                $(document).ready(function(){
-                  
-                 $(".main").delay(7200).slideDown(1000);
-                
-                })
+                <script>
+                    $(document).ready(function() {
+
+                        $(".main").delay(7200).slideDown(1000);
+
+                    })
                 </script>
             </div>
             <!-- wrap 끝 전 -->

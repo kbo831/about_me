@@ -58,6 +58,11 @@
     <!--[if lte IE 9]
     <script src="js/respond.js"></script>
     <![endif]-->
+    <script>
+        $(document).ready(function() {
+            $(".horizon_item").
+        });
+    </script>
 </head>
 
 <body>
@@ -77,73 +82,86 @@
                     <h2 class="pj_tit">Project</h2>
                     <div class="container horizon_box">
                         <ul class="content clr horizon_frame">
-                            <li class="project1 horizon item">
-                                <div class="item">
-                                    <a href="project01.html">1</a>
-                                </div>
-                                <div class="cover">
-                                    <h2>관공서</h2>
-                                </div>
+                            <li class="project1 horizon_item">
+                                <a href="project01.html">
+                                    <img src="./img/project_img_w1.png" alt="익산문화관광">
+                                    <div class="cover">
+                                        <h2>관공서</h2>
+                                    </div>
+                                </a>
                                 <h1>web1</h1>
                                 <p class="com">익산문화관광 포트폴리오</p>
                             </li>
-                            <li class="project2 horizon item">
-                                <div class="item">
-                                    <a href="project02.html">2</a>
-                                </div>
-                                 <div class="cover">
-                                      <h2>관공서</h2>
-                                 </div>
+                            <li class="project2 horizon_item">
+                                <a href="project02.html">
+                                    <img src="./img/project_img_w3.png" alt="경기도청">
+                                    <div class="cover">
+                                        <h2>관공서</h2>
+                                    </div>
+                                </a>
                                 <h1>web3</h1>
                                 <p class="com">경기도청 포트폴리오</p>
                             </li>
-                            <li class="project3 horizon item">
-                                <div class="item">
-                                    <a href="project03.html">3</a>
-                                </div>
-                                 <div class="cover">
-                                      <h2>브랜드</h2>
-                                 </div>
+                            <li class="project3 horizon_item">
+
+                                <a href="project03.html">
+                                    <img src="./img/project_img_w4.png" alt="시드물">
+                                    <div class="cover">
+                                        <h2>브랜드</h2>
+                                    </div>
+                                </a>
                                 <h1>web4</h1>
                                 <p class="com">시드물 포트폴리오</p>
                             </li>
-                            <li class="project4 horizon item">
-                                <div class="item">
-                                    <a href="project04.html">4</a>
-                                </div>
-                                 <div class="cover">
-                                      <h2>기업</h2>
-                                 </div>
+                            <li class="project4 horizon_item">
+                                <a href="project04.html">
+                                    <img src="./img/project_img_w5.png" alt="cj그룹">
+                                    <div class="cover">
+                                        <h2>기업</h2>
+                                    </div>
+                                </a>
                                 <h1>web5</h1>
                                 <p class="com">CJ(주) 포트폴리오</p>
                             </li>
-                            <li class="project5 horizon item">
-                                <div class="item">
-                                    <a href="project05.html">5</a>
-                                </div>
-                                 <div class="cover"></div>
-                                <h1>제목</h1>
+                            <li class="project5 horizon_item">
+                                <a href="project05.html">
+                                    <img src="" alt="">
+                                    <div class="cover">
+                                        <h2>병원</h2>
+                                    </div>
+                                </a>
+                                <h1>반응형_bootstrap</h1>
+                                <p class="com">아이리움안과 포트폴리오</p>
                             </li>
-                            <li class="project6 horizon item">
-                                <div class="item">
-                                    <a href="project06.html">6</a>
-                                </div>
-                                 <div class="cover"></div>
+                            <li class="project6 horizon_item">
+                                <a href="project06.html">
+                                    <img src="" alt="">
+                                    <div class="cover">
+                                        <h2>기업</h2>
+                                    </div>
+                                </a>
                                 <h1>제목</h1>
+                                <p class="com">아이리움안과 포트폴리오</p>
+
                             </li>
-                            <li class="project7 horizon item">
-                                <div class="item">
-                                    <a href="project07.html">7</a>
-                                </div>
-                                 <div class="cover"></div>
+                            <li class="project7 horizon_item">
+                                <a href="project07.html">
+                                    <div class="cover">
+                                        <h2>기업</h2>
+                                    </div>
+                                </a>
                                 <h1>제목</h1>
+                                <p class="com">아이리움안과 포트폴리오</p>
                             </li>
-                            <li class="project8 horizon item">
-                                <div class="item">
-                                    <a href="project08.html">8</a>
-                                </div>
-                                 <div class="cover"></div>
+                            <li class="project8 horizon_item">
+                                <a href="project08.html">
+                                    <img src="" alt="">
+                                    <div class="cover">
+                                        <h2>기업</h2>
+                                    </div>
+                                </a>
                                 <h1>제목</h1>
+                                <p class="com">아이리움안과 포트폴리오</p>
                             </li>
                         </ul>
                     </div>
@@ -168,34 +186,12 @@
             $(document).ready(function() {
 
                 $(".main").fadeIn(2000);
-
-                var sct = $(window).scrollTop();
-                var ht = $(".bg_box li").height();
-                var wd = $(".bg_box li").width();
-                // 콘텐츠 스크롤시 배경 넘어가게
-                //1. 스크롤 양 구하기
-                //2. 스크롤 한 번 할 때 프로젝트 슬라이드 한번
-                //3.nice 플러그인 사용?
-
-
-                $(window).scroll(function() {
-                    if (sct >= ht) {
-                        nt();
-                    }
-
-                    function nt() {
-                        $(".bg_box").not(":animated").animate({
-                            "margin-left": -wd
-                        }, 700, function() {
-                            $(".bg_box li").eq(0).appendTo($(".bg_box"));
-                            $(".bg_box").css("margin-left", "0px");
-                        })
-                    }
-                });
             })
         </script>
     </div>
     <!-- wrap 끝 전 -->
 
 
-</body></html>
+</body>
+
+</html>

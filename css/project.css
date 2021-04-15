@@ -7,19 +7,21 @@
 
 .scroll_section .project_box .pj_tit { color:#a09c9c;  font-size: 2em; margin-top: 10%; line-height: 5.0; }
 
-
+/*가로 스크롤 태그*/
+/*figurer 역할*/
 .scroll_section .container { width: 100%; height:80%; margin: 0 auto; overflow:hidden;  }
-.scroll_section .container .content { width: 200%; height: 100%; }
-.scroll_section .container .content li { width:12% ; height:80%; float:left; margin-right: 0.5%;  border-radius: 5px; position:relative; }
-.scroll_section .container .content li .item { width: 100%; height: 40%; position: relative;  border-radius: 5px;}
-.scroll_section .container .content li .cover { width: 100%; height: 40%; border-radius: 5px;background-color:#ff98b7; position:absolute; top: 0; left: 0; transition: 0.8s; }
-.scroll_section .container .content li .cover h2 { padding: 20%; box-sizing: border-box; font-size: 2rem; text-align: center; color:#ba3be9 }
+/*ul 역할*/
+.scroll_section .container .content { width: 200%; height: 100%; display: table; border-collapse: collapse; }
+/*li 아이템역할*/
+.scroll_section .container .content li { width:12% ; height:80%; float:left; margin-right: 0.5%;  border-radius: 5px; position:relative; display: table-cell; }
 .scroll_section .container .content li .cover:hover { opacity:0; visibility:hidden; }
-
 .scroll_section .container .content li  h1 { line-height: 2.0; padding-left: 5%; box-sizing: border-box; color: #a09c9c;}
 .scroll_section .container .content li p.com { line-height: 2.0; padding-left: 5%; box-sizing: border-box; color: #a09c9c; font-size: 1.2rem}
-.scroll_section .container .content li .item a { display: block; width: 100% ; height: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center;  text-indent: -9999px; border-radius: 5px; }
-
+.scroll_section .container .content li a  { display: block; width: 100% ; height: 40%; background-size: cover; background-repeat: no-repeat; background-position: center center;   border-radius: 5px; position: relative;  border-radius: 5px; }
+.scroll_section .container .content li a img{ display: block; width: 100%; height: 100%; border-radius: 5px; }
+.scroll_section .container .content li a .cover
+{ background-color:#ff98b7; position:absolute; top: 0; left: 0; transition: 0.8s; width: 100%; height: 100%;}
+.scroll_section .container .content li a .cover h2 { padding: 20%; box-sizing: border-box; font-size: 2rem; text-align: center; color:#ba3be9 }
 /*콘텐츠 내용*/
 .scroll_section .container .content li.project1 .item a { background-image: url(../content/web1.png);}
 .scroll_section .container .content li.project2 .item a { background-image: url(../content/web3.png);}

@@ -1,2 +1,10 @@
 @charset "utf-8";
-.skill { width: 100%; height: 100%; margin-top: 4.1em; overflow: hidden; clear:both; }
+.skill { width: 100%; height: 100vh; margin-top: 4.1em; overflow: hidden; clear:both; }
+.left_box {  float: left ; width: 40%;  border-right: 2px solid }
+.left_box .svg { width: 100%; }
+.left_box .svg .svg_fr { width: 70%; margin: 0 auto}
+.left_box .svg .svg_fr 
+
+/*right_box*/
+.right_box { width: calc(100% - 560px); margin-top: 4em; margin-left: 560px; padding: 3%; padding-top: 0; box-sizing: border-box; }
+

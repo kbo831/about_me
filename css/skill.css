@@ -1,10 +1,35 @@
 @charset "utf-8";
-.skill { width: 100%; height: 100vh; margin-top: 4.1em; overflow: hidden; clear:both; }
-.left_box {  float: left ; width: 40%;  border-right: 2px solid }
-.left_box .svg { width: 100%; }
-.left_box .svg .svg_fr { width: 70%; margin: 0 auto}
-.left_box .svg .svg_fr 
+.skill { width: 100%; height: 100vh; margin-top: 4.1em; overflow: hidden; clear:both; margin-top: 0;}
+.left_box { float: left ; width:100%; border-right: 2px solid }
+.left_box .svg { width: 85%; margin: 10% auto; }
+.left_box .svg .svg_fr { width:90%;  margin: 0 auto;  }
+.left_box .svg .svg_fr .svg_lst  { width:300px; height:250px; float:left; position: relative;   text-align: center; margin: 0 2%; }
+.left_box .svg .svg_fr .svg_lst .wrap { width: 230px; height: 230px; position:absolute; top: 0;left: 0;  transform: rotate(-90deg);}
 
+.left_box .svg .svg_fr .svg_lst h2.tit { position: absolute; top: 10%; font-size: 25px; z-index: 80; }
+/* 마지막 선의 위치(offset값)과 100%의 선의 위치가 같아야 됨 */
+ #cir1{ animation-name:cir1; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 100; }
+@keyframes cir1 { 
+    0% { stroke-dashoffset:628 }
+   100% { stroke-dashoffset:100}
+}
+
+#cir2{ animation-name:cir1; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 100; }
+@keyframes cir2 { 
+    0% { stroke-dashoffset:628 }
+   100% { stroke-dashoffset:100 }
+}
+
+#cir3{ animation-name:cir1; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 100; }
+@keyframes cir2 { 
+    0% { stroke-dashoffset:628 }
+   100% { stroke-dashoffset:100 }
+}
+
+#cir4{ animation-name:cir1; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 100; }
+@keyframes cir2 { 
+    0% { stroke-dashoffset:628 }
+   100% { stroke-dashoffset:100 }
 /*right_box*/
-.right_box { width: calc(100% - 560px); margin-top: 4em; margin-left: 560px; padding: 3%; padding-top: 0; box-sizing: border-box; }
+
 

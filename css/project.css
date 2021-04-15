@@ -1,9 +1,9 @@
 @charset "utf-8";
 /*헤더 색상변경*/
-.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(255,153,0,0.4) }
+.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(255,204,255,0.7) }
 
 
-.main .hd .gnb_lst li:hover { background-color:#ffcc00; }
+.main .hd .gnb_lst li:hover { background-color:#ffb0eb; }
 .main .hd .gnb_lst li:hover a { color: #fff; }
 
 

@@ -1,19 +1,19 @@
 @charset "utf-8";
 
 
-.wrap .hd a {  background-color:rgba(128,202,0,0.8) }
-.wrap .hd a:hover {  background-color:  #80ca00; }
-.wrap .hd .gnb_btn { border: 1px solid rgba(132,); background-image: url(../ico/sub_gnb_btn03.png); }
-.wrap .hd .gnb_btn { border:1px solid #80ca00; }
-.wrap .hd .gnb_lst li a { background-color: rgba(210,251,129,0.9);}
-.wrap .hd .gnb_lst li a:hover { background-color:  #80ca00; }
+.wrap .hd a {  background-color:rgba(255,204,51,0.7);  }
+.wrap .hd a:hover {  background-color:  #ff9900; }
+.wrap .hd .gnb_btn { border: 1px solid rgba(132,); background-image: url(../ico/sub_gnb_btn04.png); }
+.wrap .hd .gnb_btn { border:1px solid #ffcc00; }
+.wrap .hd .gnb_lst li a { background-color: #ffea9f;}
+.wrap .hd .gnb_lst li a:hover { background-color:  #ff9900; }
 
 .content { width: 100%;  height: 100vh;  }
 .content .pg { width: 100%; min-height: 979px; position:relative; padding-top:4.5%; overflow: hidden;  box-sizing: border-box; }
-.content .pg1 h1 { width: 100%; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#008000; }
+.content .pg1 h1 { width: 100%; line-height: 770px; font-size: 100px; text-align: center; margin-top: 100%; display: none; color:#ff9700; }
 .content .pg1 .ani_box { width: 100%; height:100px; clear: both; display: none; }
 .content .pg1 .ani_box .ani_inner { width: 10%;  height: 100%; margin: 0 auto; position: relative; }
-.content .pg1 .ani_con { position: absolute; bottom: 25%; left: 50%; z-index: 90; width: 50%; height:100%;  margin-left: -2.5%; border:3px solid rgba(128,202,0,0.5); border-radius: 200px; animation-name: inner1; animation-iteration-count: infinite; animation-duration: 1.5s; animation-timing-function: ease-in-out; }
+.content .pg1 .ani_con { position: absolute; bottom: 25%; left: 50%; z-index: 90; width: 50%; height:100%;  margin-left: -2.5%; border:3px solid #ffe27d; border-radius: 200px; animation-name: inner1; animation-iteration-count: infinite; animation-duration: 1.5s; animation-timing-function: ease-in-out; }
 .content .pg1 .ani_con:hover { animation-play-state: paused; }
 
 @keyframes inner1 { 
@@ -29,9 +29,9 @@
 .content .pg1 .ani_con .ani_inner2 { width: 100%; height: 100% ; position: relative; overflow: hidden; }
 .content .pg1 .ani_con .ani_inner2 span { position: absolute; display: block ;  }
 .content .pg1 .ani_con .ani_inner2:hover span { animation-play-state: paused; }
-.content .pg1 .ani_con .ani_inner2 span.long { width: 10%; height: 50%; background-color: rgba(210,251,129,0.9);; left: 50%; top: 15%; border-radius: 5px; margin-left: -5%; animation-name: inner2; animation-duration: 3s; animation-iteration-count: infinite;animation-timing-function: linear; }
+.content .pg1 .ani_con .ani_inner2 span.long { width: 10%; height: 50%; background-color: #ffe27d; left: 50%; top: 15%; border-radius: 5px; margin-left: -5%; animation-name: inner2; animation-duration: 3s; animation-iteration-count: infinite;animation-timing-function: linear; }
 
-.content .pg1 .ani_con .ani_inner2 span.circle { width: 10%; height: 10%; background-color: rgba(210,251,129,0.9);; border-radius: 5px; left: 50%; bottom: 15%; margin-left: -5%; animation-name: inner3; animation-duration: 4s; animation-iteration-count: infinite;  animation-timing-function: linear; }
+.content .pg1 .ani_con .ani_inner2 span.circle { width: 10%; height: 10%; background-color: #ffe27d; border-radius: 5px; left: 50%; bottom: 15%; margin-left: -5%; animation-name: inner3; animation-duration: 4s; animation-iteration-count: infinite;  animation-timing-function: linear; }
 
 @keyframes inner2 { 
     0% { 
@@ -44,28 +44,28 @@
     }
     75% { height:37.5%;
     }
-    100% { height:50%;  background-color: #008000;
+    100% { height:50%;  background-color: #ff9900;
     }
 }
 
 
 @keyframes inner3 { 
     0% { 
-         transform: scale(0.2)
+         transform: scale(0.2); background-color: #ffe27d
     }
-    25% { transform: scale(1)
+    25% { transform: scale(1.5); background-color: #ff9900;
     }
-    50% { transform: scale(0.2) 
+    50% { transform: scale(0.2); background-color: #ffe27d
     }
-    75% {transform: scale(1)
+    75% {transform: scale(1.5)
     }
-    100% { transform: scale(0.2); background-color: #008000;
+    100% { transform: scale(0.2); background-color: #ff9900;
     }
 }
 
 /* 포트폴리오: 페이지2 */
 
-.pg2 h1.tit {  line-height: 2.0; font-size: 40px; background-color: #80ca00; box-sizing: border-box; padding-left: 8%; margin-top: 1.5%; color: #eee; font-weight: 400; }
+.pg2 h1.tit {  line-height: 2.0; font-size: 40px; background-color: #ffb933; box-sizing: border-box; padding-left: 8%; margin-top: 1.5%; color: #ffff;  font-weight: 400; }
 /*left_box*/
 .pg2 .left_box { width: 20%; float:left;}
 .pg2 .project_img { width: 100%; margin-top: 30% }
@@ -99,18 +99,18 @@
 .pg2 .right_box .web_info .color_lst li span { display: block;  width: 10%; height: 50px; float:left; margin-right: 2% }
 .pg2 .right_box .web_info .color_lst li p.color_name, .pg2 .right_box .web_info .font p.font_type { font-size: 20px; line-height: 2.5; } 
 
-.pg2 .right_box .web_info .color_lst li.color_it1 span { background-color: #4a8f00
+.pg2 .right_box .web_info .color_lst li.color_it1 span { background-color: #ee0510
  } 
-.pg2 .right_box .web_info .color_lst li.color_it2 span { background-color: #80ca00
+.pg2 .right_box .web_info .color_lst li.color_it2 span { background-color: #ff9600
 
   }
-.pg2 .right_box .web_info .color_lst li.color_it3 span { background-color: #a98668
+.pg2 .right_box .web_info .color_lst li.color_it3 span { background-color: #0065c6
   }
 
-.pg2 .right_box .web_info .color_lst li.color_it4  span.cl1 { background-color:#00a1ff }
-.pg2 .right_box .web_info .color_lst li.color_it4  span.cl2 { background-color:#ffcc00 }
-.pg2 .right_box .web_info .color_lst li.color_it4  span.cl3 { background-color:#008000 }
+.pg2 .right_box .web_info .color_lst li.color_it4  span.cl1 { background-color:#000000 }
+.pg2 .right_box .web_info .color_lst li.color_it4  span.cl2 { background-color:#e3e1e2 }
+.pg2 .right_box .web_info .color_lst li.color_it4  span.cl3 { background-color:#fdfdfd; border:1px solid #ddd;}
 .pg2 .right_box .web_info .color_lst li.color_it4 p.color_name { clear:both; }
 
-#project_go { background-color: #80ca00; }
-#project_go:hover { background-color: #008000 ; }
+#project_go { background-color: #ffcc00; }
+#project_go:hover { background-color: #ff9900 ; }

@@ -26,8 +26,4 @@ a { text-decoration: none;}
 .main .wrap .spring_bg .bg_box { width: 400%; height: 100vh; }
 .main .wrap .spring_bg .bg_box li { float:left; width: 100vw; height:100%; background-repeat: no-repeat; background-position: center center; background-size: cover; }
 
-.main .wrap .spring_bg .bg_box li.bg1 {  }
-/*
-.main .wrap .spring_bg .bg_box li.bg2 { background-image: }
-.main .wrap .spring_bg .bg_box li.bg3 { background-image: }
-.main .wrap .spring_bg .bg_box li.bg4 { background-image: }*/
+

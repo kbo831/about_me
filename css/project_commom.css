@@ -64,8 +64,8 @@
 .pg2 .project_img li { width: 100%; margin: 3% 0 ; position:relative; }
 .pg2 .project_img li a, .pg2 .project_img li .plus { display: block; width: 100%; height: 160px; }
 
-
-
+/*.pg2 .project_img li .plus { position:absolute; left: 0; top: 0; }
+.pg2 .project_img li.it plus { background-image: url("") }*/
 .pop { width: 100%; height:100%; background-color: rgba(204,153,255,0.4);  position:fixed; left: 0; top: 0;  display: none; z-index: 100; }
 
 

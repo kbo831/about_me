@@ -1,27 +1,27 @@
 @charset "utf-8";
 /*헤더 색상변경*/
-.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(255,204,255,0.7) }
+.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(246,85,134,0.7)}
 
-
-.main .hd .gnb_lst li:hover { background-color:#ffb0eb; }
-.main .hd .gnb_lst li:hover a { color: #fff; }
-
-
-.scroll_section { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("../bg/project_bg.png"); background-repeat: no-repeat; background-position: center center; }
+.scroll_section { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("../bg/m_bg02.jpg"); background-repeat: no-repeat; background-position: center center; }
 .scroll_section .project_box { width: 78.5%; height: 80%; margin:  6% auto; }
 
-.scroll_section .project_box .pj_tit { color:#000;  font-size: 2em; margin-top: 10%; line-height: 5.0;}
+.scroll_section .project_box .pj_tit { color:#000;  font-size: 2em; margin-top: 10%; line-height: 5.0; }
 
 
 .scroll_section .container { width: 100%; height:80%; margin: 0 auto; overflow:hidden;  }
 .scroll_section .container .content { width: 200%; height: 100%; }
-.scroll_section .container .content li { width:12% ; height:80%; float:left; margin-right: 0.5%;  border-radius: 5px;}
+.scroll_section .container .content li { width:12% ; height:80%; float:left; margin-right: 0.5%;  border-radius: 5px; position:relative; }
 .scroll_section .container .content li .item { width: 100%; height: 40%; position: relative;  border-radius: 5px;}
+.scroll_section .container .content li .cover { width: 100%; height: 40%; border-radius: 5px;background-color:#ff98b7; position:absolute; top: 0; left: 0; transition: 0.8s; }
+.scroll_section .container .content li .cover:hover { opacity:0; visibility:hidden; }
+
 .scroll_section .container .content li  h1 { line-height: 2.0; padding-left: 5%; box-sizing: border-box;}
 .scroll_section .container .content li p.com { line-height: 2.0; padding-left: 5%; box-sizing: border-box;}
 .scroll_section .container .content li .item a { display: block; width: 100% ; height: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center;  text-indent: -9999px; border-radius: 5px; }
-.scroll_section .container .content li .item a:after { content:""; width: 100%; height: 100% ; background-color:rgba( 0,0,0,0.7); position:absolute; top: 0; left: 0; color:#fff; font-size: 1.5em; transition: 0.8s;  border-radius: 5px;}
-.scroll_section .container .content li .item a:hover::after { opacity:0; visibility:hidden; }
+
+
+
+
 
 /*콘텐츠 내용*/
 .scroll_section .container .content li.project1 .item a { background-image: url(../content/web1.png);}
@@ -29,4 +29,11 @@
 .scroll_section .container .content li.project3 .item a { background-image: url(../content/web4.png);}
 .scroll_section .container .content li.project4 .item a { background-image: url(../content/web5.png);}
 
+/*  슬라이드 bar */
+.bar_box { width: 30%;  height:20%; position: absolute; right: 0; bottom: 10% ;}
+.bar_box .bar_lst{ width: 100%; height: 100%; }
+.bar_box .bar_lst li { float:left; }
+.bar_box .bar_lst li.left_num,.bar_box .bar_lst li.right_num { width: 5%; text-align: center }
+.bar_box .bar_lst li.length {  width: 50%; text-indent: -99999px; height:2px; background-color:#debeff; margin-top: 2%; }
+.bar_box .bar_lst li.length span { display: block; width: 25%; height:4px; background-color:#f65586; margin-top:-1px;}
 

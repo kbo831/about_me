@@ -24,18 +24,14 @@ a { text-decoration: none;}
 
 
 
-.section { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("../bg/m_bg02.jpg"); background-repeat: no-repeat; background-position: center center; }
-.section .project_box { width: 78.5%; height: 80%; margin:  6% auto; }
 
-.section .project_box .pj_tit { color:#a09c9c;  font-size: 2em; margin-top: 10%; line-height: 5.0; }
+.section .project_box { width: 78.5%; height: 80%; margin:  0 auto; }
 
-/*가로 스크롤 태그*/
-/*figurer 역할*/
-.section .container { width: 100%; height:100%; margin: 0 auto; }
-/*ul 역할*/
-.section .container .content { width: 100%; }
+.section .project_box .pj_tit { color:#a09c9c;  font-size: 2em; margin-top: 10%; line-height: 3.0; }
+
+.section .project_box  .content { width: 100%; }
 /*li 아이템역할*/
-.section .content li { width:25% ; height:50%;  margin-right: 0.5%;  border-radius: 5px; position:relative; display: table-cell; }
+.section .content li { width:22% ; height:50%; border-radius: 5px; position:relative; float:left; margin-right: 3% }
 
 .section .content li .cover:hover { opacity:0; visibility:hidden; }
 .section .content li  h1 { line-height: 2.0; padding-left: 5%; box-sizing: border-box; color: #a09c9c;}

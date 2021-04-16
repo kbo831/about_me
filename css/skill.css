@@ -9,7 +9,7 @@ section.pg { width: 100%; height: auto; }
 .box .svg .svg_fr .svg_lst .hover_box { position:absolute ; left: 50%;}
 
 .box .svg .svg_fr .svg_lst h2.tit { position: absolute; top: -10%; left: 0; font-size: 20px; z-index: 80; }
-.box .svg .svg_fr .svg_lst p.num { position:absolute; font-size: 20px}
+.box .svg .svg_fr .svg_lst p.num { position:absolute; font-size: 50px}
 .box .svg .svg_fr .svg_lst h2.tit .space { padding:0 5% }
 
 /* 마지막 선의 위치(offset값)과 100%의 선의 위치가 같아야 됨 */

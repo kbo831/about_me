@@ -8,8 +8,9 @@ section.pg { width: 100%; height: auto; }
 .box .svg .svg_fr .svg_lst .wrap { width: 230px; height: 230px; position:absolute; top: 0;left: 0;  transform: rotate(-90deg);}
 .box .svg .svg_fr .svg_lst .hover_box { position:absolute ; left: 50%;}
 
-.box .svg .svg_fr .svg_lst h2.tit { position: absolute; top: 8%; left: 0; font-size: 20px; z-index: 80; }
-.box .svg .svg_fr .svg_lst h2.tit .space { padding:0 30% }
+.box .svg .svg_fr .svg_lst h2.tit { position: absolute; top: -10%; left: 0; font-size: 20px; z-index: 80; }
+.box .svg .svg_fr .svg_lst p.num { position:absolute; font-size: 20px}
+.box .svg .svg_fr .svg_lst h2.tit .space { padding:0 5% }
 
 /* 마지막 선의 위치(offset값)과 100%의 선의 위치가 같아야 됨 */
  #cir1{ animation-name:cir1; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 150; }

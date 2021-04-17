@@ -1,119 +1,419 @@
 @charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
 
-* { margin: 0; padding: 0; }
-body,html { width: 100%; font-family:"NotoSans-Medium", "sans-serif"; overflow-x: hidden; }
-ul { list-style: none; }
-a { text-decoration: none;}
-.clr { clear:both }
-.clr:after { content:""; display: block; clear:both;}
+body,
+html {
+    width: 100%;
+    font-family: "NotoSans-Medium", "sans-serif";
+    overflow-x: hidden;
+}
 
-.all { width: 100vw; height: 100vh;}
-.wrap { width: 100%; height:100%; }
-.hello { width: 100% ; height: 100vw; position:fixed; top: 0; left: 0; }
-.hello .hello_wrap { width: 100% ; height:100%;  }
-.hello .hello_wrap .word_lst { width: 80%; height:50%; clear:both;  position: relative;}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both
+}
+
+.clr:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.all {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.hello {
+    width: 100%;
+    height: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.hello .hello_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.hello .hello_wrap .word_lst {
+    width: 80%;
+    height: 50%;
+    clear: both;
+    position: relative;
+}
+
 
 /* 애니메이션 구현 생각하기 */
-.hello .hello_wrap .word_lst span {position:absolute; top:35%; font-size: 15em; font-weight: 800; animation-duration:2.3s; animation-timing-function: ease-in-out;  color:mediumpurple; transform-origin: 50% 50%; }
-.hello .hello_wrap .word_lst span.it1 { left:30%;  animation-name:roll1;  }
 
-.hello .hello_wrap .word_lst span.it2 {left:42%;  animation-name:roll2; animation-delay: 0.3s }
-.hello .hello_wrap .word_lst span.it3 {left:52%;  animation-name:roll3; animation-delay: 0.6s }
-.hello .hello_wrap .word_lst span.it4 {left:57%;
- animation-name:roll4; animation-delay: 0.9s}
-.hello .hello_wrap .word_lst span.it5 {left:62%;  animation-name:roll5; animation-delay: 1.2s }
-.hello .hello_wrap .word_lst span.it6 {left:72%;  animation-name:roll6; animation-delay: 1.5s }
-.hello .hello_wrap .word_lst span.it7 {left:88%;  animation-name:roll7; animation-delay: 1.8s }
+.hello .hello_wrap .word_lst span {
+    position: absolute;
+    top: 35%;
+    font-size: 15em;
+    font-weight: 800;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+    color: mediumpurple;
+    transform-origin: 50% 50%;
+}
+
+.hello .hello_wrap .word_lst span.it1 {
+    left: 30%;
+    animation-name: roll1;
+}
+
+.hello .hello_wrap .word_lst span.it2 {
+    left: 42%;
+    animation-name: roll2;
+    animation-delay: 0.3s
+}
+
+.hello .hello_wrap .word_lst span.it3 {
+    left: 52%;
+    animation-name: roll3;
+    animation-delay: 0.6s
+}
+
+.hello .hello_wrap .word_lst span.it4 {
+    left: 57%;
+    animation-name: roll4;
+    animation-delay: 0.9s
+}
+
+.hello .hello_wrap .word_lst span.it5 {
+    left: 62%;
+    animation-name: roll5;
+    animation-delay: 1.2s
+}
+
+.hello .hello_wrap .word_lst span.it6 {
+    left: 72%;
+    animation-name: roll6;
+    animation-delay: 1.5s
+}
+
+.hello .hello_wrap .word_lst span.it7 {
+    left: 88%;
+    animation-name: roll7;
+    animation-delay: 1.8s
+}
 
 @keyframes roll1 {
-    0% { transform: translateY(120%) ;  }
-    50% { transform: translateY(-50%); color:purple}
-    70% { transform: translateY(50%); }
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0); color:mediumpurple}
+    0% {
+        transform: translateY(120%);
+    }
+    50% {
+        transform: translateY(-50%);
+        color: purple
+    }
+    70% {
+        transform: translateY(50%);
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
 }
 
 @keyframes roll2 {
-    0% { transform: translateY(120%)}
-    50% { transform: translateY(-50%);  }
-    70% { transform: translateY(50%); color:purple}
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:mediumpurple }
+    0% {
+        transform: translateY(120%)
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    70% {
+        transform: translateY(50%);
+        color: purple
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
 }
 
 @keyframes roll3 {
-    0% { transform: translateY(120%)}
-    50% { transform: translateY(-50%);  }
-    70% { transform: translateY(50%); color:purple}
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:mediumpurple }
+    0% {
+        transform: translateY(120%)
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    70% {
+        transform: translateY(50%);
+        color: purple
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
 }
 
 @keyframes roll4 {
-    0% { transform: translateY(120%)}
-    50% { transform: translateY(-50%);  }
-    70% { transform: translateY(50%); color:purple}
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:mediumpurple }
+    0% {
+        transform: translateY(120%)
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    70% {
+        transform: translateY(50%);
+        color: purple
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
 }
+
 @keyframes roll5 {
-    0% { transform: translateY(120%)}
-    50% { transform: translateY(-50%);  }
-    70% { transform: translateY(50%); color:purple}
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:mediumpurple}
+    0% {
+        transform: translateY(120%)
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    70% {
+        transform: translateY(50%);
+        color: purple
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
 }
+
 @keyframes roll6 {
-    0% { transform: translateY(120%)}
-    50% { transform: translateY(-50%);  }
-    70% { transform: translateY(50%); color:purple}
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:mediumpurple }
+    0% {
+        transform: translateY(120%)
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    70% {
+        transform: translateY(50%);
+        color: purple
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
 }
+
 @keyframes roll7 {
-    0% { transform: translateY(120%)}
-    50% { transform: translateY(-50%);  }
-    70% { transform: translateY(50%); color:purple}
-    90% { transform: translateY(-30%) }
-    100% { transform: translateY(0);color:mediumpurple }
+    0% {
+        transform: translateY(120%)
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    70% {
+        transform: translateY(50%);
+        color: purple
+    }
+    90% {
+        transform: translateY(-30%)
+    }
+    100% {
+        transform: translateY(0);
+        color: mediumpurple
+    }
+}
+
+.hello .scroll_txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 153, 255, 0.4)
+}
+
+.hello .scroll_txt .st_lst {
+    width: 80%;
+    height: 50%;
+    clear: both;
+    position: relative;
+    margin-left: 15%;
+    position: relative;
+}
+
+.hello .scroll_txt .st_lst span {
+    font-size: 14em;
+    position: absolute;
+    transition: 3s;
+    transition-delay: 2s;
+    color: #fff;
+    text-shadow: 1px 1px 0px 5px brown;
+}
+
+.hello .scroll_txt .st_lst span.it1 {
+    left: -80%;
+    top: 18%;
+}
+
+.hello .scroll_txt .st_lst span.it2 {
+    right: -80%;
+    bottom: 18%;
+}
+
+.main {
+    clear: both;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+
+.main .hd {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.main .hd .gnb_lst {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main .hd .gnb_lst li {
+    float: left;
+    width: 20%;
+}
+
+.main .hd .gnb_lst li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    color: black;
+    background-color: rgba(204, 153, 255, 0.4)
+}
+
+.main .hd .gnb_lst li:hover {
+    background-color: darkorchid;
+}
+
+.main .hd .gnb_lst li:hover a {
+    color: #fff;
+}
+
+.main .wrap {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 
-.hello .scroll_txt { width: 100%; height: 100%; background-color:rgba(204,153,255,0.4) }
-.hello .scroll_txt .st_lst { width: 80%; height:50%; clear:both;  position: relative;  margin-left: 15%; position:relative;}
-.hello .scroll_txt .st_lst span { font-size: 14em; position:absolute;  transition:3s; transition-delay: 2s; color: #fff; text-shadow: 1px 1px 0px 5px brown; }
-.hello .scroll_txt .st_lst span.it1 { left: -80%;  top: 18%; }
-.hello .scroll_txt .st_lst span.it2 { right: -80%; bottom: 18%; }
-
-.main {  clear:both; width: 100vw; height:100vh;  position:relative; display: none;  overflow: hidden;}
-.main .hd { width: 100%; height:20%; overflow: hidden; position:fixed; z-index: 999; top: 0; left: 0;}
-.main .hd .gnb_lst { width: 100%; height: 100%; margin: 0 auto ; }
-.main .hd .gnb_lst li { float:left; width: 20%;  }
-.main .hd .gnb_lst li a { display: block; width: 100%; text-align: center; padding: 5%; box-sizing: border-box; font-size: 1.2em; color: black; background-color:rgba(204,153,255,0.4) }
-.main .hd .gnb_lst li a.on { background-color:darkorchid; }
-
-.main .hd .gnb_lst li:hover { background-color: darkorchid;}
-.main .hd .gnb_lst li:hover a { color: #fff; }
-
-.main .wrap { width: 100vw; height: 100vh; overflow:hidden; position:relative;  }
 /*ul 밖에 display: table;
     table-layout: fixed;*/
-.main .wrap .spring_bg { width: 100%; height: 100% ; position:absolute; left: 0; top: 0; }
+
+.main .wrap .spring_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
 /*ul에 display:table-cell*/
-.main .wrap .spring_bg .bg_box { width: 400%; height: 100vh; }
-.main .wrap .spring_bg .bg_box li { float:left; width: 100vw; height:100%; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+
+.main .wrap .spring_bg .bg_box {
+    width: 400%;
+    height: 100vh;
+}
+
+.main .wrap .spring_bg .bg_box li {
+    float: left;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 
 /*intro*/
-.intro { width: 100%; height: 100%; margin-top: 4.1em; overflow: hidden; clear:both; }
-.left_box {  float: left ; background-color: #fbe2e6 ; }
-.right_box { width: calc(100% - 560px); margin-top: 4em; margin-left: 560px; padding: 3%; padding-top: 0; box-sizing: border-box; }
-.right_box .txt_box { width:80%; margin: 0 auto; margin-bottom: 2em}
-.right_box .txt_box h2.tit { line-height: 3.0 ; position:relative; padding-left: 2em }
-.right_box .txt_box h2.tit:before { content:"▶"; padding-right: 20px; font-size: 0.8em; position:absolute; top: 14%; left: 0; }
-.right_box .txt_box h2.tit:hover::before {   }
-.right_box .txt_box .com { line-height: 2.0 ; text-indent: 20px; word-break: break-all; letter-spacing: 2px;}
-.right_box ul.info {width: 80%; margin: 5% auto; }
-.right_box ul.info .info_lst { float: left; width: 33.3333%;text-align: center; line-height: 2.0 ; border-top:1px solid #eee; border-bottom:1px solid #eee; min-height: 13em }
-.right_box ul.info .info_lst h3.tit { line-height: 3.0 } 
 
+.intro {
+    width: 100%;
+    height: 100%;
+    margin-top: 4.1em;
+    overflow: hidden;
+    clear: both;
+}
 
+.left_box {
+    width: 100%;
+    margin: 1% auto;
+    padding: 6%;
+    box-sizing: border-box;
+}
+
+.left_box p {
+    line-height: 1.8;
+    padding-left: 12%;
+}
+
+.left_box em {
+    font-size: 80px;
+}
+
+.left_box p:first-child {
+    ;
+}
+
+.left_box p:first-child {
+    text-align: right;
+    padding-right: 10%;
+}
+
+.left_box p:last-child {
+    font-size: 100px;
+    padding-top: 3%;
+}
+
+.left_box .color {
+    color: #ff33ff;
+}

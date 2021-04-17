@@ -41,8 +41,9 @@ a {
 
 .wrap {
     clear: both;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto
 }
 
 header {
@@ -50,7 +51,7 @@ header {
 }
 
 .hd .gnb_lst {
-    width: 90%;
+    width: 100%;
     display: block;
     position: relative;
     z-index: 100;
@@ -192,4 +193,14 @@ path {
         fill-opacity: 1;
         stroke-dashoffset: 0;
     }
+}
+
+.pg2 .tit {
+    margin-top: 5%;
+    font-size: 40px;
+    line-height: 3.0;
+}
+
+.pg2 .box {
+    width: 100%;
 }

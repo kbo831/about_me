@@ -1,74 +1,138 @@
-@charset "utf-8";
-
-/*intro*/
-
-.intro {
-    width: 100%;
-    height: 100%;
-    margin-top: 4.1em;
-    overflow: hidden;
-    clear: both;
-}
-
-.left_box {
-    float: left;
-    background-color: #fbe2e6;
-}
-
-.right_box {
-    width: calc(100% - 560px);
-    margin-top: 4em;
-    margin-left: 560px;
-    padding: 3%;
-    padding-top: 0;
-    box-sizing: border-box;
-}
-
-.right_box .txt_box {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2em
-}
-
-.right_box .txt_box h2.tit {
-    line-height: 3.0;
-    position: relative;
-    padding-left: 2em
-}
-
-.right_box .txt_box h2.tit:before {
-    content: "▶";
-    padding-right: 20px;
-    font-size: 0.8em;
-    position: absolute;
-    top: 14%;
-    left: 0;
-}
-
-.right_box .txt_box h2.tit:hover::before {}
-
-.right_box .txt_box .com {
-    line-height: 2.0;
-    text-indent: 20px;
-    word-break: break-all;
-    letter-spacing: 2px;
-}
-
-.right_box ul.info {
-    width: 80%;
-    margin: 5% auto;
-}
-
-.right_box ul.info .info_lst {
-    float: left;
-    width: 33.3333%;
-    text-align: center;
-    line-height: 2.0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    min-height: 13em
-}
-
-.right_box ul.info .info_lst h3.tit {
-    line-height: 3.0
-}
+            @charset "utf-8";
+            /*intro*/
+            
+            .intro {
+                width: 100%;
+                margin-top: 4.1em;
+                overflow: hidden;
+                clear: both;
+            }
+            
+            .left_box {
+                float: left;
+                background-color: #fbe2e6;
+            }
+            
+            .left_box .svg_box {
+                width: 559px;
+                height: 902px;
+                position: relative;
+            }
+            
+            .left_box .svg_box path {
+                fill: none;
+                stroke-width: 5px;
+                stroke: #fff;
+                ;
+                animation-duration: 5s;
+            }
+            
+            .left_box .svg_box path.st0 {
+                stroke-dasharray: 2500;
+                stroke-dashoffset: 0;
+                animation-name: outline;
+            }
+            
+            @keyframes outline {
+                0% {
+                    stroke-dashoffset: 2500
+                }
+                100% {
+                    stroke-dashoffset: 0;
+                }
+            }
+            
+            .left_box .svg_box path.st1 {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 0;
+                animation-name: outline2;
+            }
+            
+            @keyframes outline2 {
+                0% {
+                    stroke-dashoffset: 1000
+                }
+                100% {
+                    stroke-dashoffset: 0;
+                }
+            }
+            
+            .left_box .svg_box path.st2 {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 0;
+                animation-name: outline3;
+            }
+            
+            @keyframes outline3 {
+                0% {
+                    stroke-dashoffset: 1000
+                }
+                100% {
+                    stroke-dashoffset: 0;
+                }
+            }
+            
+            .left_box .svg_box .me {
+                position: absolute;
+                top: 10%;
+                left: -10%;
+                height: 815px;
+                display: none;
+                animation-name: me;
+            }
+            
+            .right_box {
+                width: calc(100% - 560px);
+                margin-top: 4em;
+                margin-left: 560px;
+                padding: 3%;
+                padding-top: 0;
+                box-sizing: border-box;
+            }
+            
+            .right_box .txt_box {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 2em
+            }
+            
+            .right_box .txt_box h2.tit {
+                line-height: 3.0;
+                position: relative;
+                padding-left: 2em
+            }
+            
+            .right_box .txt_box h2.tit:before {
+                content: "▶";
+                padding-right: 20px;
+                font-size: 0.8em;
+                position: absolute;
+                top: 14%;
+                left: 0;
+            }
+            
+            .right_box .txt_box .com {
+                line-height: 2.0;
+                text-indent: 20px;
+                word-break: break-all;
+                letter-spacing: 2px;
+            }
+            
+            .right_box ul.info {
+                width: 80%;
+                margin: 5% auto;
+            }
+            
+            .right_box ul.info .info_lst {
+                float: left;
+                width: 33.3333%;
+                text-align: center;
+                line-height: 2.0;
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+                min-height: 13em
+            }
+            
+            .right_box ul.info .info_lst h3.tit {
+                line-height: 3.0
+            }

@@ -1,4 +1,12 @@
             @charset "utf-8";
+            .main .hd .gnb_lst li a.on {
+                background-color: darkorchid;
+                color: #fff
+            }
+            
+            .main .hd .gnb_lst li:hover {
+                background-color: darkorchid;
+            }
             /*intro*/
             
             .intro {

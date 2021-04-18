@@ -59,6 +59,13 @@
     <!--[if lte IE 9]
     <script src="js/respond.js"></script>
     <![endif]-->
+    <script>
+        $(document).ready(function() {
+            $(".gnb_lst li a").click(function() {
+                $(this).addClass("on");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -69,7 +76,7 @@
                 <header class="hd clr">
                     <ul class="gnb_lst clr">
                         <li class="it1"><a href="index.html">TAEEUN_K</a></li>
-                        <li class="it3"><a href="intro.html">intro</a></li>
+                        <li class="it3"><a href="intro.html" class="on">intro</a></li>
                         <li class="it4"><a href="project.html">project</a></li>
                         <li class="it5"><a href="skill.html">skill</a></li>
                         <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>

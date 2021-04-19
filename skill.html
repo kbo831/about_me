@@ -59,12 +59,14 @@
     <![endif]-->
     <script>
         $(document).ready(function() {
+            $(".main").slideDown(1000);
+
             $(".svg_lst").each(function(index) {
                 $(this).mouseenter(function() {
-                    $(".hover_box,.hover_box1").eq(index).css("display","block");
+                    $(".hover_box,.hover_box1").eq(index).css("display", "block");
                 });
                 $(this).mouseleave(function() {
-                    $(".hover_box,.hover_box1").eq(index).css("display","none");
+                    $(".hover_box,.hover_box1").eq(index).css("display", "none");
                 });
             });
         });
@@ -273,32 +275,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <span class="">마우스</span>
+                            <span class="">hover</span>
                         </div>
                         <!-- 두번째 박스 끝 -->
-                        <script>
-                            $(document).ready(function() {
-
-                                $(".svg_lst").each(function() {
-                                    var hv_num = $(this).index();
-                                    $(this).mouseenter(function() {
-
-                                        //hover의 호버 박스 인덱스값에 따라서 보여지게
-                                    });
-                                    console.log(hv_num);
-                                });
-
-                            });
-                        </script>
                     </section>
                     <!-- main 끝 전 -->
-                    <script>
-                        $(document).ready(function() {
-
-                            $(".main").slideDown(1000);
-
-                        })
-                    </script>
                 </div>
                 <!-- wrap 끝 전 -->
             </div>

@@ -66,16 +66,17 @@ section.pg { width: 100%; height: auto; }
    }
 
 /*hover_box*/
-.hover_box, .hover_box1 { width: 18%; height:auto; position:absolute; ;background-color: #ebd6ff; border:2px solid rgba(0,0,0,0.2); z-index: 99; border-radius: 4px; display: none;}
+.hover_box, .hover_box1 { width: 12%; height:auto; position:absolute; ;background-color: #ebd6ff; border:2px solid rgba(0,0,0,0.2); z-index: 99; border-radius: 10px; display: none;}
 
 .hover_box { top:47%; }
 .hover_box1 { top:28% }
 
-#hover5,#hover6  { top:63.5% }
-#hover8 { top:50% }
+#hover5,#hover6  { top:55% }
+#hover7{ top:23%}
+#hover8 { top:55% }
 
-#hover1,#hover5 { left: 10%;}
-#hover2,#hover6  { left: 29%;}
+#hover1,#hover5 { left: 20%;}
+#hover2,#hover6  { left: 40%;}
 #hover3,#hover7 { left: 48%; }
 #hover4,#hover8 { left: 67%;}
 

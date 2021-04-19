@@ -61,11 +61,48 @@
     <script src="js/respond.js"></script>
     <![endif]-->
     <script>
-        $(document).ready(function() {
-         
+        $(document).ready(function(){
+      $(".project_box").each(function (index) {
+          // 개별적으로 Wheel 이벤트 적용
+          $(this).on("mousewheel DOMMouseScroll", function (e) {
+              e.preventDefault();
+              var delta = 0;
+              if (!event) event = window.event;
+              if (event.wheelDelta) {
+                  delta = event.wheelDelta / 120;
+                  if (window.opera) delta = -delta;
+              } 
+              else if (event.detail)
+                  delta = -event.detail / 3;
+              var moveTop = $(window).scrollLeft();
+              var elmSelecter = $(".project_box").eq(index);
+              // 마우스휠을 위에서 아래로
+              if (delta < 0) {
+                  if ($(elmSelecter).next() != undefined) {
+                      try{
+                          moveTop = $(elmSelecter).next().offset().left;
+                      }catch(e){}
+                  }
+              // 마우스휠을 아래에서 위로
+              } else {
+                  if ($(elmSelecter).prev() != undefined) {
+                      try{
+                          moveTop = $(elmSelecter).prev().offset().left;
+                      }catch(e){}
+                  }
+              }
 
-        });
-    </script>
+              // 화면 이동 0.8초(800)
+              $("html,body").stop().animate({
+                  scrollLeft: moveTop + 'px'
+              }, {
+                  duration: 800, complete: function () {
+                  }
+              });
+          });
+      }); 
+  });    
+  </script>
 </head>
 
 <body>
@@ -146,7 +183,6 @@
                             </a>
                             <h1>반응형_display:block</h1>
                             <p class="com">전라북도 경찰청(미완)</p>
-
                         </li>
                         <li class="project3">
                             <a href="project07.html">
@@ -171,6 +207,7 @@
                     </ul>
                 </section>
                 <section class="project_box">
+                    <h2 class="pj_tit"><i class="xi-projector"></i>&nbsp;&nbsp;Project</h2>
                     <ul class="content clr">
                         <li class="project1">
                             <a href="project09.html">
@@ -194,7 +231,6 @@
                             <p class="com">백제태권도</p>
                         </li>
                         <li class="project3">
-
                             <a href="project11.html">
                                 <img src="./img/replace_img.png" alt="전북경찰청">
                                 <div class="cover">
@@ -218,8 +254,6 @@
                 </section>
                 <!-- 끝 -->
             </div>
-
-
         </div>
         <!-- main 끝 전 -->
         <script>

@@ -37,6 +37,7 @@ a {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    
 }
 
 .wrap {
@@ -235,3 +236,18 @@ path {
     background: transparent;
     width: 50%;
 }
+
+#home {
+    display: block;
+    width: 5%;
+    height: 7%;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background-color: #d9a9ff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.8% 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1px 1px 0px grey;}

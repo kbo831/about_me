@@ -81,11 +81,11 @@
                         $(".gnb_btn").click(function() {
                             $(".gnb_lst").fadeToggle(500);
                         });
-                        $(".pg1").mouseenter(function() {
+                        $(window).load(function(){
                             $(".pg1 h1,.ani_box").not(":animated").animate({
                                 "margin-top": "0px"
                             }, 700).fadeIn(1000);
-                        })
+                        });
                     });
                 </script>
             </header>

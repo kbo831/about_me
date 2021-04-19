@@ -8,6 +8,11 @@ section.pg { width: 100%; height: auto; }
 .box .svg .svg_fr .svg_lst .wrap { width: 230px; height: 230px; position:absolute; top: 0;left: 0;  transform: rotate(-90deg); }
 .box .svg .svg_fr .svg_lst .hover_box { position:absolute ; left: 50%;}
 .box .svg .svg_fr .svg_lst h2.tit { position: absolute; top:38%; left: 25%; font-size: 16px; z-index: 80; }
+/* skill 각 타이틀 위치 */
+.box .svg:first-child .svg_fr .svg_lst:first-child h2.tit { left: 20%;}
+.box .svg:nth-child(2) .svg_fr .svg_lst:nth-child(1) h2.tit { left: 17%;}
+.box .svg:nth-child(2) .svg_fr .svg_lst:nth-child(3) h2.tit { left: 15%;}
+.box .svg:nth-child(2) .svg_fr .svg_lst:nth-child(4) h2.tit { left: 35%;}
 .box .svg .svg_fr .svg_lst p.num { position:absolute; font-size: 50px}
 .box .svg .svg_fr .svg_lst h2.tit .space { padding:0 5% }
 

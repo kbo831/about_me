@@ -61,7 +61,7 @@
     <script src="js/respond.js"></script>
     <![endif]-->
     <script>
-        $(document).ready(function(){
+    $(document).ready(function(){
       $(".project_box").each(function (index) {
           // 개별적으로 Wheel 이벤트 적용
           $(this).on("mousewheel DOMMouseScroll", function (e) {
@@ -100,10 +100,10 @@
                   }
               });
           });
-      }); 
+      });
   });    
   </script>
-</head>
+ </head>
 
 <body>
     <div class="all">
@@ -254,12 +254,37 @@
                 </section>
                 <!-- 끝 -->
             </div>
+            <div class="bar_box">
+                <ul class="bar_lst">
+                    <li class="left_num">1</li>
+                    <li class="leng"><span></span></li>
+                    <li class="right_num">1</li>
+                </ul>
+            </div>
         </div>
         <!-- main 끝 전 -->
         <script>
             $(document).ready(function() {
-
                 $(".main").fadeIn(2000);
+                //bar 길어지게!
+                $(".project_box").mouseenter(function(){
+                    var idx = $(this).index();
+                    var pg_num = idx + 1;
+                    var wd =$(".bar_lst .leng span").width();
+                    var cur_wd=wd*pg_num;
+                    console.log(cur_wd);
+                    $(".bar_lst .right_num").text(pg_num);
+
+                    if(0<=idx&& idx<2){
+                        $(".bar_lst .leng span").width(cur_wd);
+                    }else{
+                        $(".bar_lst .leng span").width(cur_wd)*-pg_num
+                    }
+                   
+                   
+                   
+
+                });
             })
         </script>
     </div>

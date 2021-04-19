@@ -129,8 +129,34 @@
                     <ul class="box clr">
                        <li><img src="./img/ap.png" alt="비행기" class="ap"></li> 
                         <li class="con ">
-                            <p class="call">010-xxxx-xxxx</p>
-                            <a href="mailto:kbo6924@naver.com" class="mail ">send</a> 
+                            <ul class="info">
+                                <li class="info1">지원자 : 김태은</li>
+                                <li class="info2"><p class="call">전화 : 010-2747-6924</p></li>
+                                <li class="info2"><p class="call"> 비상전화: 010-5767-6924</p></li>
+                                <li class="info3"><a href="mailto:kbo6924@naver.com" class="mail "></a></li>
+                                <li class="info4"></li>
+                                <li class="info5">
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1618794393070" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        
+        <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1618794393070",
+                "key" : "25eui",
+                "mapWidth" : "80%",
+                "mapHeight" : "auto"
+            }).render();
+        </script>
+                                
+                                </li>
+                            </ul>
                         </li>
                     </div>
                 </section>
@@ -138,7 +164,6 @@
                     <h1 class="hide">애니메이션</h1>
                     <div class="box">
                         <svg>
-                          
                       </svg>
                     </div>
                 </section> -->
@@ -148,7 +173,7 @@
         </div>
     </div>
     <!-- 포트폴리오 이미지 확대 끝-->
-    <a href="project.html " id="project_go ">Project</a>
+    <a href="project.html " id="project_go ">home</a>
     </div>
 
     </div>

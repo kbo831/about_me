@@ -11,12 +11,11 @@ body,
 html {
     width: 100%;
     font-family: "NotoSans-Medium", "sans-serif";
-    overflow-x: hidden;
 }
+::-webkit-scrollbar { display:none; }
+::-moz-scrollbar { display:none; }
+::-o-scrollbar { display:none; }
 
- ::-webkit-scrollbar {
-    display: none;
-}
 
 ul {
     list-style: none;
@@ -43,10 +42,9 @@ a {
 
 .main {
     clear: both;
-    width: 100vw;
+    width: 1920px;
     height: 100vh;
     position: relative;
-    display: none;
 }
 
 .main .hd {
@@ -98,26 +96,29 @@ a {
 }
 
 .section {
-    width: 100%;
+    width: 200%;
     height: 100%;
+    display: table; table-layout: fixed; z-index:999; 
+    border-collapse: collapse;
 }
 
 .section .project_box {
-    width: 78.5%;
+    width: 1920px;
     height: 100%;
-    margin: 0 auto;
+    display:table-cell; float:left;
 }
 
 .section .project_box .pj_tit {
     color: #a09c9c;
     font-size: 2em;
     margin-top: 10%;
+    margin-left: 10%;
     line-height: 3.0;
 }
 
 .section .project_box .content {
-    width: 100%;
-    margin-bottom: 5%
+    width: 78.5%;
+   margin: 0 auto;
 }
 
 

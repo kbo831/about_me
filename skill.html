@@ -60,6 +60,7 @@
     <script>
         $(document).ready(function() {
             $(".main").slideDown(1000);
+
             $(".svg_lst").each(function(index) {
                 $(this).mouseenter(function() {
                     $(".hover_box,.hover_box1").eq(index).css("display", "block");
@@ -67,6 +68,24 @@
                 $(this).mouseleave(function() {
                     $(".hover_box,.hover_box1").eq(index).css("display", "none");
                 });
+                //p의 클래스 찾아주기
+                var num = $(this).find(".num")
+                //p의 텍스트값 가져오기
+                var num_inner = num.text();
+                console.log(num_inner);
+                //텍스트값 초기화 0으로
+                num.text(0 +" % ");
+                
+                $({rate:0}).animate({rate:num_inner},{
+                    duration:6000,
+                    progress:function(){
+                        var now = parseInt(this.rate)+"%";
+                        console.log(now)
+                        num.text(now);
+                    }
+                
+                })
+                
             });
         });
     </script>

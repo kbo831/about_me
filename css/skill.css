@@ -53,10 +53,10 @@ section.pg { width: 100%; height: auto; }
       100% { stroke-dashoffset:320 }
    }
    
-   #cir7{ animation-name:cir7; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 200; }
+   #cir7{ animation-name:cir7; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 250; }
    @keyframes cir7 { 
        0% { stroke-dashoffset:628 }
-      100% { stroke-dashoffset:200 }
+      100% { stroke-dashoffset:250 }
    }
    
    #cir8{ animation-name:cir8; animation-duration:7s; stroke-dasharray:628; stroke-dashoffset: 320; }

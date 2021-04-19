@@ -205,16 +205,16 @@ path {
 }
 
 .pg2 .box {
-    width: 100%;
+    width: 90%; margin: 0 auto;
 }
 .pg2 .box li { float:left;}
 .pg2 .box .ap {  display: block; width: 500px; height: 500px;  }
 .pg2 .box .con { width : calc(100% - 500px); box-sizing: border-box;  }
-.pg2 .box .con  .info { width: 100%; margin-left: 10%; }
+.pg2 .box .con  .info { width: 100%; margin-left: 20%; }
 .pg2 .box .con .info li { width: 100%; line-height: 2.7; font-size: 25px; }
 .pg2 .box .con .info li.info3 .mail { color:#000;  position:relative; }
 .pg2 .box .con .info li.info3 .mail:before { content:"kbo6924@naver.com"; padding-right: 1%; }
-.pg2 .box .con .info li.info3 .mail:after { content:"메일보내기"; display: block; top: 10%; right: -40%; position:absolute; font-size: 18px; opacity: 0; visibility: hidden; transition: 0.6s; animation-name: ani1; animation-duration:1s; animation-iteration-count: infinite;}
+.pg2 .box .con .info li.info3 .mail:after { content:"메일보내기"; display: block; top: 0; right: -40%; position:absolute; font-size: 18px; opacity: 0; visibility: hidden; transition: 0.6s; animation-name: ani1; animation-duration:1.5s; animation-iteration-count: infinite;}
 @keyframes ani1 { 
     0% { 
         transform:rotateY(-90deg);
@@ -225,3 +225,13 @@ path {
 }
 .pg2 .box .con .info li.info3 .mail:hover::before { text-decoration: underline; color: darkorchid;}
 .pg2 .box .con .info li.info3 .mail:hover::after { opacity: 1; visibility:visible;  }
+.pg2 .box .con .info li.info4 p.tit { margin: 0; font-size: 25px;
+   
+}
+#daumRoughmapContainer1618794393070 {
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0;
+    background: transparent;
+    width: 50%;
+}

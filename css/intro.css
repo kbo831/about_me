@@ -107,17 +107,9 @@
             .right_box .txt_box h2.tit {
                 line-height: 3.0;
                 position: relative;
-                padding-left: 2em
+            
             }
             
-            .right_box .txt_box h2.tit:before {
-                content: "▶";
-                padding-right: 20px;
-                font-size: 0.8em;
-                position: absolute;
-                top: 14%;
-                left: 0;
-            }
             
             .right_box .txt_box .com {
                 line-height: 2.0;

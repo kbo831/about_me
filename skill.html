@@ -57,7 +57,18 @@
     <!--[if lte IE 9]
     <script src="js/respond.js"></script>
     <![endif]-->
-   
+    <script>
+        $(document).ready(function() {
+            $(".svg_lst").each(function(index) {
+                $(this).mouseenter(function() {
+                    $(".hover_box,.hover_box1").eq(index).css("display","block");
+                });
+                $(this).mouseleave(function() {
+                    $(".hover_box,.hover_box1").eq(index).css("display","none");
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -96,6 +107,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">JS<span class="space">&amp;</span>jQuery</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                     <li class="svg_lst">
                                         <div class="wrap ">
@@ -104,6 +116,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">Photoshop</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                     <li class="svg_lst">
                                         <div class="wrap">
@@ -112,6 +125,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">Illustrator</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                 </ul>
                             </div>
@@ -125,6 +139,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">PROTOTYPE TOOL</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                     <li class="svg_lst">
                                         <div class="wrap">
@@ -133,6 +148,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">PREMIERE</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                     <li class="svg_lst">
                                         <div class="wrap ">
@@ -141,6 +157,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">OFFICE_SOFTWARE</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                     <li class="svg_lst">
                                         <div class="wrap">
@@ -149,6 +166,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="tit">ETC</h2>
+                                        <p class="num">75%</p>
                                     </li>
                                 </ul>
                             </div>
@@ -255,6 +273,7 @@
                                     </ul>
                                 </div>
                             </div>
+                            <span class="">마우스</span>
                         </div>
                         <!-- 두번째 박스 끝 -->
                         <script>

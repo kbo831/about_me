@@ -237,9 +237,9 @@ a {
 .bar_box {
     width: 30%;
     height: 20%;
-    position: absolute;
-    right: 0;
-    bottom: 10%;
+    position: fixed;
+    right: -2%;
+    bottom: -10%;
 }
 
 .bar_box .bar_lst {
@@ -253,21 +253,22 @@ a {
 
 .bar_box .bar_lst li.left_num,
 .bar_box .bar_lst li.right_num {
-    width: 5%;
-    text-align: center
+    width: 5%; height:24px;
+    text-align: center;
+
 }
 
-.bar_box .bar_lst li.length {
-    width: 50%;
+.bar_box .bar_lst li.leng {
+    width: 40%;
     text-indent: -99999px;
     height: 2px;
     background-color: #debeff;
     margin-top: 2%;
 }
 
-.bar_box .bar_lst li.length span {
+.bar_box .bar_lst li.leng span {
     display: block;
-    width: 25%;
+    width: 50%;
     height: 4px;
     background-color: #f65586;
     margin-top: -1px;

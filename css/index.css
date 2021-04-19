@@ -386,32 +386,35 @@ a {
 
 .left_box {
     width: 100%;
+    height:100%;
     margin: 1% auto;
     padding: 6%;
     box-sizing: border-box;
+    position:relative;
 }
 
 .left_box p {
     line-height: 1.8;
-    padding-left: 12%;
+    position:absolute;
+    opacity:0; visibility: hidden; transition: 1s;
 }
+.left_box p.on { opacity:1; visibility: visible; }
+/* 15 30 */
+.left_box .txt01 { top: 50%; right:15%; } 
+.left_box .txt01.on { top:15% }
+.left_box .txt02 { top: 80%; left:15%; }
+.left_box .txt02.on { top:30% }
+.left_box .txt03 { top: 10%; left:15%; }
+.left_box .txt03.on { top:50% }
 
 .left_box em {
     font-size: 80px;
 }
 
-.left_box p:first-child {
-    ;
-}
-
-.left_box p:first-child {
-    text-align: right;
-    padding-right: 10%;
-}
 
 .left_box p:last-child {
     font-size: 100px;
-    padding-top: 3%;
+   
 }
 
 .left_box .color {

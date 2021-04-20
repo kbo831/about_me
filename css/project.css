@@ -270,9 +270,10 @@ a {
     display: block; float:left;
     width: 50%;
     height: 4px;
-    margin-top: -1px;
+    margin-top: -1px; transition:0.6s; opacity:0 ; visibility: hidden; 
 }
 
 .bar_box .bar_lst li.leng span.on {
     background-color: #f65586;
+     opacity:1 ; visibility: visible;
 }

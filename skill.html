@@ -282,8 +282,15 @@
                                     </ul>
                                 </div>
                             </div>
-                            <span class="">hover</span>
+                            <span class="hover_ms"></span>
                         </div>
+                        <script>
+                            $(function(){
+                                $(".svg_lst").eq(0).mouseenter(function(){
+                                    $(".hover_ms").fadeOut()
+                                });
+                            })
+                        </script>
                         <!-- 두번째 박스 끝 -->
                     </section>
                     <!-- main 끝 전 -->

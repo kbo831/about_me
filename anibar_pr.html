@@ -257,7 +257,10 @@
             <div class="bar_box">
                 <ul class="bar_lst">
                     <li class="left_num">1</li>
-                    <li class="leng"><span></span></li>
+                    <li class="leng">
+                        <span>1</span>
+                        <span>2</span>
+                    </li>
                     <li class="right_num">1</li>
                 </ul>
             </div>
@@ -268,24 +271,15 @@
                 $(".main").fadeIn(2000);
                 //bar 길어지게!
                 $(".project_box").mouseenter(function(){
+                    //페이지의 순서 0, 1
                     var idx = $(this).index();
-                    var pg_num = idx + 1;
-                    var wd =$(".bar_lst .leng span").width();
-                    var cur_wd=wd*pg_num;
-                    console.log(cur_wd);
+                    var pg_num = idx + 1;                 
                     $(".bar_lst .right_num").text(pg_num);
-
-                    if(0<=idx&& idx<2){
-                        $(".bar_lst .leng span").width(cur_wd);
-                    }else{
-                        $(".bar_lst .leng span").width(cur_wd)
-                    }
-                   
-                   
-                   
-
+                      //애니바
+                    $(".bar_lst .leng span").eq(idx).addClass("on");
+                    $(".bar_lst .leng span").eq(idx).siblings().removeClass("on");
                 });
-            })
+            });
         </script>
     </div>
     <!-- wrap 끝 전 -->

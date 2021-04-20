@@ -267,9 +267,12 @@ a {
 }
 
 .bar_box .bar_lst li.leng span {
-    display: block;
+    display: block; float:left;
     width: 50%;
     height: 4px;
-    background-color: #f65586;
     margin-top: -1px;
+}
+
+.bar_box .bar_lst li.leng span.on {
+    background-color: #f65586;
 }

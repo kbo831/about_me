@@ -23,7 +23,7 @@ a { text-decoration: none;}
 .wrap .hd .gnb_lst li:hover { background-color: darkorchid; }
 .wrap .hd .gnb_lst li:hover a { color: #fff; }
 
-.wrap .hd .gnb_btn { display: block; width: 3.5%; height: 7%; border:1px solid rgba(204,153,255,0.4) ; position:absolute; right: 5.2%; top: 0%; position:fixed; background-color: transparent; background-image: url("../ico/sub_gnb_btm.png"); background-repeat: no-repeat; background-position: center center; box-sizing: border-box; }
+.wrap .hd .gnb_btn { display: block; width: 3.5%; height: 7%; border:1px solid rgba(204,153,255,0.4) ; position:absolute; right: 5.7%; top: 0%; position:fixed; background-color: transparent; background-image: url("../ico/sub_gnb_btm.png"); background-repeat: no-repeat; background-position: center center; box-sizing: border-box; }
 
-#project_go { display: block; width: 5%; height: 7%; position:fixed; right: 5%; bottom: 5%; background-color: #d9a9ff; font-size: 1.2rem; text-align: center; padding: 0.8% 0; box-sizing: border-box; color:#fff; text-shadow: 1px 1px 0px gray}
+#project_go { display: block; width: 5%; height: 7%; position:fixed; right: 4%; bottom: 5%; background-color: #d9a9ff; font-size: 1.2rem; text-align: center; padding: 0.8% 0; box-sizing: border-box; color:#fff; text-shadow: 1px 1px 0px gray}
 #project_go:hover {background-color: darkorchid; }

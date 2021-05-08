@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAEEUN_k_PORTFOLIO</title>
+    <meta name="title" content="TAEEUN_k_PORTFOLIO">
+    <meta name="keywords" content="김태은 포트폴리오">
+    <meta name="description" content="김태은의 포트폴리오 웹페이지입니다.">
+    <meta http-equiv="refresh" content="180">
+    <meta name="application-name" content="iksan_eyehospital">
+    <meta property="og:title" content="태은's 포트폴리오">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="김태은의 포트폴리오 웹페이지입니다.">
+    <meta property="og:image" content="오픈그래프 이미지넣기">
+    <meta property="og:url" content="http://kbo831.github.io/about_me">
+    <meta property="og:site_name" content="김태은의 포트폴리오 웹페이지입니다.">
+    <meta name="twitter:card" content="김태은의 포트폴리오 웹페이지입니다.">
+    <meta name="twitter:title" content="TAEEUN_k_PORTFOLIO">
+    <meta name="twitter:description" content="김태은의 포트폴리오 웹페이지입니다.">
+    <meta name="twitter:image" content="트위터이미지 넣기">
+    <meta name="twitter:creator" content="@kim">
+    <meta name="twitter:site" content="http://kbo831.github.io/about_me">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="윈도우 타일이미지. png 넣기">
+    <!-- 보통사이즈32부터 2배수로  -->
+    <link rel="shortcut icon" href="숏컷이미지넣기.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="숏컷이미지넣기.ico" type="image/x-icon">
+    <!--1.폰트셋.css-->
+    <!--빙그레 웹폰트 파일안에 넣기:오류수정하기-->
+    <link rel="stylesheet" href="./css/font.css">
+    <!--2.reset/clear.css/nomalize.css -->
+    <link rel="stylesheet" href="./css/clear.css">
+    <!--x-icon cdn -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+    <!--공통, 메인 css링크-->
+    <link rel="stylesheet" href="./css/subcommon.css">
+    <link rel="stylesheet" href="./css/project011.css">
+    <!--구글애널리틱스 소스코드:Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYHW3BJNLM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYHW3BJNLM');
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 9]
+    <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="all">
+        <div class="wrap clr">
+            <header class="hd clr">
+                <a href="index.html" class="home">TAEEUN_K</a>
+                <div class="fix_box">
+                    <ul class="gnb_lst">
+                        <li class="it3"><a href="intro.html">intro</a></li>
+                        <li class="it4"><a href="project.html">project</a></li>
+                        <li class="it5"><a href="skill.html">skill</a></li>
+                        <li class="it6"><a href="contact.html">Contact&nbsp;me</a></li>
+                    </ul>
+                    <button class="gnb_btn">
+                    </button>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $(".gnb_btn").click(function() {
+                            $(".gnb_lst").fadeToggle(500);
+                        });
+                        $(window).load(function(){
+                            $(".pg1 h1,.ani_box").not(":animated").animate({
+                                "margin-top": "0px"
+                            }, 700).fadeIn(800);
+                        });
+                    });
+                </script>
+            </header>
+            <div class="content">
+                <section class="pg pg1 clr">
+                    <h1>전북경찰청 모바일 포트폴리오</h1>
+                    <div class="ani_box clr">
+                        <div class="ani_inner clr">
+                            <div class="ani_con">
+                                <div class="ani_inner2 clr">
+                                    <span class="long"></span>
+                                    <span class="circle"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 페이지2-->
+                <section class="pg pg2">
+                    <h1 class="tit">포트폴리오 요약</h1>
+                    <div class="left_box">
+                        <ul class="project_img">
+                            <li class="it1">
+                                <a href="#cover1">
+                                    <img src="./img/project_img_pl_m.png" alt="전북경찰청01">
+                                    <img src="./img/project_img_w102.png" alt="전북경찰청02">
+                                    <img src="./img/project_img_w103.png" alt="전북경찰청03">
+                                    <img src="./img/project_img_w104.png" alt="전북경찰청04">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <section class="project_dsc">
+                            <ul>
+                                <li>
+                                    <h2 class="tit">사용 툴 : HTML / CSS3 / JQuery</h2>
+                                </li>
+                                <li>
+                                    <a href="https://kbo831.github.io/pl_m" target="_blank" class="git_add">
+                                        <img src="./img/git_ico.png" alt="깃허브 아이콘" class="git_ico">Git hub : https://kbo831.github.io/pl_m
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="text_box clr">
+                                <h2 class="tit">제작 의도</h2>
+                                <p class="com">관공서 사이트(전라북도 경찰청)를 선정해 자유롭게 디자인. 반응형 모바일 사이트이며,<br> 부분 display:flex 적용. (반응형 미적용, 진행중인 포트폴리오 입니다.)
+                                </p>
+                            </div>
+                            <ul class="web_info">
+                                <li class="color">
+                                    <h3 class="tit">컬러 스키마</h3>
+                                    <ul class="color_lst">
+                                        <li class="color_it1">
+                                            <span class="cl"></span>
+                                            <p class="color_name">선화공주핑크 #f064a5 </p>
+                                        </li>
+                                        <li class="color_it2">
+                                            <span class="cl"></span>
+                                            <p class="color_name">배산연두색 #a6ce39
+                                            </p>
+                                        </li>
+                                        <li class="color_it3">
+                                            <span class="cl"></span>
+                                            <p class="color_name">웅포주황색 #f7941e
+                                            </p>
+                                        </li>
+                                        <li class="color_it4">
+                                            <span class="cl"></span>
+                                            <p class="color_name">어메이징보라 #661773
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="font">
+                                    <h3 class="tit">폰트</h3>
+                                    <p class="font_type">'Noto Sans KR', sans-serif
+                                    </p>
+                                </li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </section>
+                <!-- 페이지2 끝-->
+            </div>
+            <!-- 포트폴리오 이미지 확대 끝-->
+            <a href="project.html" id="project_go">Project</a>
+        </div>
+
+    </div>
+    <!-- main 끝 전 -->
+    <script>
+    </script>
+
+    <!-- wrap 끝 전 -->
+
+
+</body>
+
+</html>
